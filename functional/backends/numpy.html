@@ -84,10 +84,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../why_ivy.html">Why Ivy?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../using_ivy.html">Using Ivy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../training_a_network.html">Training a Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing to Ivy</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Array</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../array/array_mode_handler.html">Array mode handler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../array/array_api.html">Array api</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../array/conversions.html">Conversions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../array/device.html">Device</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../array/general.html">General</a></li>
@@ -103,7 +104,6 @@
 <p class="caption"><span class="caption-text">Functional</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../backends.html">Backends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../frontends.html">Frontends</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ivy.html">Ivy</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Graph compiler</span></p>
@@ -201,90 +201,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="module-ivy.functional.backends.numpy">
-<span id="numpy"></span><h1>Numpy<a class="headerlink" href="#module-ivy.functional.backends.numpy" title="Permalink to this headline">¶</a></h1>
-<dl class="py class">
-<dt id="ivy.functional.backends.numpy.Finfo">
-<em class="property">class </em><code class="sig-prename descclassname">ivy.functional.backends.numpy.</code><code class="sig-name descname">Finfo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">np_finfo</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ivy/functional/backends/numpy.html#Finfo"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ivy.functional.backends.numpy.Finfo" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="py method">
-<dt id="ivy.functional.backends.numpy.Finfo.__init__">
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">np_finfo</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ivy/functional/backends/numpy.html#Finfo.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ivy.functional.backends.numpy.Finfo.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="ivy.functional.backends.numpy.Finfo.bits">
-<em class="property">property </em><code class="sig-name descname">bits</code><a class="headerlink" href="#ivy.functional.backends.numpy.Finfo.bits" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="ivy.functional.backends.numpy.Finfo.eps">
-<em class="property">property </em><code class="sig-name descname">eps</code><a class="headerlink" href="#ivy.functional.backends.numpy.Finfo.eps" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="ivy.functional.backends.numpy.Finfo.max">
-<em class="property">property </em><code class="sig-name descname">max</code><a class="headerlink" href="#ivy.functional.backends.numpy.Finfo.max" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="ivy.functional.backends.numpy.Finfo.min">
-<em class="property">property </em><code class="sig-name descname">min</code><a class="headerlink" href="#ivy.functional.backends.numpy.Finfo.min" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="ivy.functional.backends.numpy.Finfo.smallest_normal">
-<em class="property">property </em><code class="sig-name descname">smallest_normal</code><a class="headerlink" href="#ivy.functional.backends.numpy.Finfo.smallest_normal" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py function">
-<dt id="ivy.functional.backends.numpy.finfo">
-<code class="sig-prename descclassname">ivy.functional.backends.numpy.</code><code class="sig-name descname">finfo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">datatype_in</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ivy/functional/backends/numpy.html#finfo"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ivy.functional.backends.numpy.finfo" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="ivy.functional.backends.numpy.shuffle">
-<code class="sig-prename descclassname">ivy.functional.backends.numpy.</code><code class="sig-name descname">shuffle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivy.functional.backends.numpy.shuffle" title="Permalink to this definition">¶</a></dt>
-<dd><p>permutation(x)</p>
-<p>Randomly permute a sequence, or return a permuted range.</p>
-<p>If <cite>x</cite> is a multi-dimensional array, it is only shuffled along its
-first index.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>New code should use the <code class="docutils literal notranslate"><span class="pre">permutation</span></code> method of a <code class="docutils literal notranslate"><span class="pre">default_rng()</span></code>
-instance instead; please see the <span class="xref std std-ref">random-quick-start</span>.</p>
-</div>
-<dl class="simple">
-<dt>x<span class="classifier">int or array_like</span></dt><dd><p>If <cite>x</cite> is an integer, randomly permute <code class="docutils literal notranslate"><span class="pre">np.arange(x)</span></code>.
-If <cite>x</cite> is an array, make a copy and shuffle the elements
-randomly.</p>
-</dd>
-</dl>
-<dl class="simple">
-<dt>out<span class="classifier">ndarray</span></dt><dd><p>Permuted sequence or array range.</p>
-</dd>
-</dl>
-<p>Generator.permutation: which should be used for new code.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="go">array([1, 7, 4, 3, 0, 9, 2, 5, 8, 6]) # random</span>
-</pre></div>
-</div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">15</span><span class="p">])</span>
-<span class="go">array([15,  1,  9,  4, 12]) # random</span>
-</pre></div>
-</div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
-<span class="go">array([[6, 7, 8], # random</span>
-<span class="go">       [0, 1, 2],</span>
-<span class="go">       [3, 4, 5]])</span>
-</pre></div>
-</div>
-</dd></dl>
-
+  <div class="section" id="numpy">
+<h1>Numpy<a class="headerlink" href="#numpy" title="Permalink to this headline">¶</a></h1>
 </div>
 
 
