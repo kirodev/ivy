@@ -9,6 +9,7 @@ General
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: General
 
@@ -28,6 +29,7 @@ General
    general/transpose.rst
    general/indices_where.rst
    general/squeeze.rst
+   general/zeros.rst
    general/zeros_like.rst
    general/full.rst
    general/ones.rst

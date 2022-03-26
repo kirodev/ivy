@@ -9,6 +9,7 @@ General
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: General
 
@@ -43,6 +44,7 @@ General
    general/isinf.rst
    general/broadcast_to.rst
    general/squeeze.rst
+   general/zeros.rst
    general/zeros_like.rst
    general/full.rst
    general/ones.rst

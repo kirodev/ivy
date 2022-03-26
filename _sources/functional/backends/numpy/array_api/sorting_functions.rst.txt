@@ -9,8 +9,8 @@ Sorting functions
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Sorting functions
 
-   sorting_functions/argsort.rst
 

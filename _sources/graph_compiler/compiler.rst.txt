@@ -9,6 +9,7 @@ Compiler
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Compiler
 

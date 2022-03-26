@@ -9,6 +9,7 @@ Array builtins
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Array builtins
 

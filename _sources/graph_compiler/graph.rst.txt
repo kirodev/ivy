@@ -9,6 +9,7 @@ Graph
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Graph
 
