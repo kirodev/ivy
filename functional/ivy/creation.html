@@ -565,10 +565,11 @@ same device as x.</p>
 <dt>out:</dt><dd><p>an array containing zeros.</p>
 </dd>
 </dl>
-<p>Examples:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">ivy</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="mi">3</span><span class="p">]))</span>
-</pre></div>
-</div>
+<p>Examples:
+&gt;&gt;&gt; ivy.set_framework(‘numpy’)
+&gt;&gt;&gt; shape = [3]
+&gt;&gt;&gt; x = ivy.zeros(shape)
+&gt;&gt;&gt; print(x)</p>
 </dd></dl>
 
 <dl class="py function">

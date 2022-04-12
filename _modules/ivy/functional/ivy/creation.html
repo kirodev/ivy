@@ -261,8 +261,11 @@
 <span class="sd">       an array containing zeros.</span>
 
 <span class="sd">    Examples:</span>
+<span class="sd">    &gt;&gt;&gt; ivy.set_framework(&#39;numpy&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; shape = [3]</span>
+<span class="sd">    &gt;&gt;&gt; x = ivy.zeros(shape)</span>
+<span class="sd">    &gt;&gt;&gt; print(x)</span>
 
-<span class="sd">    &gt;&gt;&gt; print(ivy.zeros([3]))</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">()</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">device</span><span class="p">)</span></div>
