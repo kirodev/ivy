@@ -9,6 +9,7 @@ Other ops
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Other ops
 

@@ -15,9 +15,6 @@ General
 
    general/array.rst
    general/is_array.rst
-   general/dtype_bits.rst
-   general/equal.rst
-   general/abs.rst
    general/argmax.rst
    general/argmin.rst
    general/cast.rst
@@ -34,6 +31,7 @@ General
    general/swapaxes.rst
    general/isnan.rst
    general/isinf.rst
+   general/isfinite.rst
    general/squeeze.rst
    general/zeros.rst
    general/zeros_like.rst

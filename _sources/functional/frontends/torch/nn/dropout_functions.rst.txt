@@ -9,6 +9,7 @@ Dropout functions
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Dropout functions
 

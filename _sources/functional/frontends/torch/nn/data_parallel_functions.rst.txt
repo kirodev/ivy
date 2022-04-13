@@ -9,6 +9,7 @@ Data parallel functions
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Data parallel functions
 

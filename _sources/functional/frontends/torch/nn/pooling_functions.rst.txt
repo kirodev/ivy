@@ -9,6 +9,7 @@ Pooling functions
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Pooling functions
 

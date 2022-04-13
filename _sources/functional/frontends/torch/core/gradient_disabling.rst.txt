@@ -9,6 +9,7 @@ Gradient disabling
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Gradient disabling
 

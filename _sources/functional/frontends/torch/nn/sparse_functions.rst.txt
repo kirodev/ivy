@@ -9,6 +9,7 @@ Sparse functions
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Sparse functions
 

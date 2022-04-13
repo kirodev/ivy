@@ -9,6 +9,7 @@ Random sampling
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Random sampling
 

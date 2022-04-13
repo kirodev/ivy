@@ -9,6 +9,7 @@ Distance functions
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Distance functions
 

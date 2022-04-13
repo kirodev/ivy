@@ -9,6 +9,7 @@ Comparison ops
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Comparison ops
 

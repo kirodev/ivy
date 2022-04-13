@@ -9,6 +9,7 @@ Loss functions
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Loss functions
 

@@ -9,6 +9,7 @@ Reduction ops
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Reduction ops
 

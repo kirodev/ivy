@@ -9,6 +9,7 @@ Index slice join mutate ops
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Index slice join mutate ops
 

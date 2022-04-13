@@ -9,6 +9,7 @@ Blas n lapack ops
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Blas n lapack ops
 

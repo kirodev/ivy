@@ -9,6 +9,7 @@ Nonlinear activation functions
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Nonlinear activation functions
 

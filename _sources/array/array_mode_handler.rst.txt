@@ -9,6 +9,7 @@ Array mode handler
 
 
 .. toctree::
+   :hidden:
    :maxdepth: -1
    :caption: Array mode handler
 
