@@ -1580,7 +1580,8 @@ def test_zeros(shape, dtype, tensor_fn, dev, call):
         return
     if not ivy.array_mode():
         helpers.assert_compilable(ivy.zeros)
-
+    # docstring test
+    helpers.assert_docstring_examples_run(ivy.zeros)
 
 # zeros_like
 @pytest.mark.parametrize(
