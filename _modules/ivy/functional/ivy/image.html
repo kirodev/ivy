@@ -214,7 +214,7 @@
 <span class="sd">    &gt;&gt;&gt; d = 1</span>
 <span class="sd">    &gt;&gt;&gt; image = ivy.reshape(ivy.arange(h * w * d, dtype=ivy.float32),shape=(batch_size, h, w, d))</span>
 <span class="sd">    &gt;&gt;&gt; dy, dx = ivy.gradient_image(image)</span>
-<span class="sd">    &gt;&gt;&gt; print(image[0, :,:,0])</span>
+<span class="sd">    &gt;&gt;&gt; print(ivy.array(image[0, :,:,0]))</span>
 <span class="sd">    ivy.array([[0., 1., 2.],</span>
 <span class="sd">               [3., 4., 5.],</span>
 <span class="sd">               [6., 7., 8.]])</span>
