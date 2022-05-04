@@ -1,66 +1,32 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ivy.functional.ivy.layers &mdash; Ivy 1.0 documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
         <script src="../../../../_static/jquery.js"></script>
         <script src="../../../../_static/underscore.js"></script>
         <script src="../../../../_static/doctools.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+    <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../../../../index.html" class="icon icon-home"> Ivy
-          
-
-          
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -68,18 +34,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Overview</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../design.html">Design</a></li>
@@ -87,32 +43,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../roadmap.html">Roadmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../contributing.html">Contributing</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Container</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/base.html">Base</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/container.html">Container</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/creation.html">Creation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/data_types.html">Data types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/device.html">Device</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/elementwise.html">Elementwise</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/general.html">General</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/gradients.html">Gradients</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/image.html">Image</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/linear_algebra.html">Linear algebra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/losses.html">Losses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/manipulation.html">Manipulation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/norms.html">Norms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/random.html">Random</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/searching.html">Searching</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/set.html">Set</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/sorting.html">Sorting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/statistical.html">Statistical</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/utility.html">Utility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../container/wrapping.html">Wrapping</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Functional</span></p>
+<p class="caption" role="heading"><span class="caption-text">Functional</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/activations.html">Activations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/compilation.html">Compilation</a></li>
@@ -138,7 +69,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/statistical.html">Statistical</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/utility.html">Utility</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Stateful</span></p>
+<p class="caption" role="heading"><span class="caption-text">Stateful</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../stateful/activations.html">Activations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../stateful/converters.html">Converters</a></li>
@@ -149,7 +80,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../stateful/optimizers.html">Optimizers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../stateful/sequential.html">Sequential</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Docs</span></p>
+<p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../../ivy"">Ivy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../../mech"">Ivy mech</a></li>
@@ -162,66 +93,30 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../../ecosystem"">Ivy ecosystem</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../index.html">Ivy</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../../index.html">Module code</a> &raquo;</li>
-        
       <li>ivy.functional.ivy.layers</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <h1>Source code for ivy.functional.ivy.layers</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">Collection of Ivy neural network layers in functional form.</span>
@@ -241,6 +136,7 @@
 
 
 <span class="c1"># Linear #</span>
+
 
 <div class="viewcode-block" id="linear"><a class="viewcode-back" href="../../../../functional/ivy/layers/linear.html#ivy.functional.ivy.layers.linear">[docs]</a><span class="k">def</span> <span class="nf">linear</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">weight</span><span class="p">,</span> <span class="n">bias</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Applies a linear transformation to the incoming data: y = x * t(weight) + bias. The operation also supports batching</span>
@@ -268,14 +164,26 @@
     <span class="n">num_out_feats</span><span class="p">,</span> <span class="n">num_in_feats</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">weight</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:])</span>
 
     <span class="c1"># OBS x IBS x OF</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">swapaxes</span><span class="p">(</span>
-        <span class="n">ivy</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">weight</span><span class="p">,</span> <span class="n">outer_batch_shape</span> <span class="o">+</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="nb">max</span><span class="p">(</span><span class="n">num_inner_batch_dims</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="p">[</span><span class="n">num_out_feats</span><span class="p">,</span> <span class="n">num_in_feats</span><span class="p">]),</span>
-        <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">))</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span>
+        <span class="n">x</span><span class="p">,</span>
+        <span class="n">ivy</span><span class="o">.</span><span class="n">swapaxes</span><span class="p">(</span>
+            <span class="n">ivy</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span>
+                <span class="n">weight</span><span class="p">,</span>
+                <span class="n">outer_batch_shape</span>
+                <span class="o">+</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nb">max</span><span class="p">(</span><span class="n">num_inner_batch_dims</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+                <span class="o">+</span> <span class="p">[</span><span class="n">num_out_feats</span><span class="p">,</span> <span class="n">num_in_feats</span><span class="p">],</span>
+            <span class="p">),</span>
+            <span class="o">-</span><span class="mi">1</span><span class="p">,</span>
+            <span class="o">-</span><span class="mi">2</span><span class="p">,</span>
+        <span class="p">),</span>
+    <span class="p">)</span>
 
     <span class="k">if</span> <span class="n">ivy</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">bias</span><span class="p">):</span>
 
         <span class="c1"># OBS x [1]*len(IBS) x OF</span>
-        <span class="n">bias_broadcast</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">bias</span><span class="p">,</span> <span class="n">outer_batch_shape</span> <span class="o">+</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">num_inner_batch_dims</span> <span class="o">+</span> <span class="p">[</span><span class="n">num_out_feats</span><span class="p">])</span>
+        <span class="n">bias_broadcast</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span>
+            <span class="n">bias</span><span class="p">,</span> <span class="n">outer_batch_shape</span> <span class="o">+</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">num_inner_batch_dims</span> <span class="o">+</span> <span class="p">[</span><span class="n">num_out_feats</span><span class="p">]</span>
+        <span class="p">)</span>
 
         <span class="c1"># OBS x IBS x OF</span>
         <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">bias_broadcast</span>
@@ -285,6 +193,7 @@
 
 
 <span class="c1"># Dropout #</span>
+
 
 <div class="viewcode-block" id="dropout"><a class="viewcode-back" href="../../../../functional/ivy/layers/dropout.html#ivy.functional.ivy.layers.dropout">[docs]</a><span class="k">def</span> <span class="nf">dropout</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">prob</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Randomly zeroes some of the elements of the input tensor with probability p using samples from a Bernoull</span>
@@ -306,13 +215,18 @@
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># noinspection PyUnresolvedReferences</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">ivy</span><span class="o">.</span><span class="n">random_uniform</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">ivy</span><span class="o">.</span><span class="n">dev</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="o">&lt;</span> <span class="n">prob</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">where</span><span class="p">(</span>
+        <span class="n">ivy</span><span class="o">.</span><span class="n">random_uniform</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">ivy</span><span class="o">.</span><span class="n">dev</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="o">&lt;</span> <span class="n">prob</span><span class="p">,</span>
+        <span class="n">ivy</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">x</span><span class="p">),</span>
+        <span class="n">x</span><span class="p">,</span>
+    <span class="p">)</span>
     <span class="k">if</span> <span class="n">scale</span><span class="p">:</span>
-        <span class="n">x</span> <span class="o">*=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">prob</span><span class="p">))</span>
+        <span class="n">x</span> <span class="o">*=</span> <span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">prob</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">x</span></div>
 
 
 <span class="c1"># Attention #</span>
+
 
 <div class="viewcode-block" id="scaled_dot_product_attention"><a class="viewcode-back" href="../../../../functional/ivy/layers/scaled_dot_product_attention.html#ivy.functional.ivy.layers.scaled_dot_product_attention">[docs]</a><span class="k">def</span> <span class="nf">scaled_dot_product_attention</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">scale</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Applies scaled dot product attention to inputs x using optional mask.</span>
@@ -337,23 +251,37 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="c1"># BS x Q x K</span>
-    <span class="n">sim</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">einsum</span><span class="p">(</span><span class="s1">&#39;... q f, ... k f -&gt; ... q k&#39;</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="o">*</span> <span class="n">scale</span>
+    <span class="n">sim</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">einsum</span><span class="p">(</span><span class="s2">&quot;... q f, ... k f -&gt; ... q k&quot;</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="o">*</span> <span class="n">scale</span>
 
     <span class="k">if</span> <span class="n">ivy</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">mask</span><span class="p">):</span>
 
         <span class="c1"># BS x Q x K</span>
         <span class="n">sim</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">where</span><span class="p">(</span>
-            <span class="n">ivy</span><span class="o">.</span><span class="n">logical_not</span><span class="p">(</span><span class="n">mask</span><span class="p">),</span> <span class="o">-</span><span class="n">ivy</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">sim</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">finfo</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dtype</span><span class="p">(</span><span class="n">ivy</span><span class="o">.</span><span class="n">dtype</span><span class="p">(</span><span class="n">sim</span><span class="p">,</span> <span class="n">as_str</span><span class="o">=</span><span class="kc">True</span><span class="p">)))</span><span class="o">.</span><span class="n">max</span><span class="p">,</span> <span class="n">sim</span><span class="p">)</span>
+            <span class="n">ivy</span><span class="o">.</span><span class="n">logical_not</span><span class="p">(</span><span class="n">mask</span><span class="p">),</span>
+            <span class="o">-</span><span class="n">ivy</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">sim</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">finfo</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dtype</span><span class="p">(</span><span class="n">ivy</span><span class="o">.</span><span class="n">dtype</span><span class="p">(</span><span class="n">sim</span><span class="p">,</span> <span class="n">as_str</span><span class="o">=</span><span class="kc">True</span><span class="p">)))</span><span class="o">.</span><span class="n">max</span><span class="p">,</span>
+            <span class="n">sim</span><span class="p">,</span>
+        <span class="p">)</span>
 
     <span class="c1"># BS x Q x K</span>
     <span class="n">attn</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span><span class="n">sim</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 
     <span class="c1"># BS x Q x F</span>
-    <span class="k">return</span> <span class="n">ivy</span><span class="o">.</span><span class="n">einsum</span><span class="p">(</span><span class="s1">&#39;... q k, ... k f -&gt; ... q f&#39;</span><span class="p">,</span> <span class="n">attn</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="n">ivy</span><span class="o">.</span><span class="n">einsum</span><span class="p">(</span><span class="s2">&quot;... q k, ... k f -&gt; ... q f&quot;</span><span class="p">,</span> <span class="n">attn</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="multi_head_attention"><a class="viewcode-back" href="../../../../functional/ivy/layers/multi_head_attention.html#ivy.functional.ivy.layers.multi_head_attention">[docs]</a><span class="k">def</span> <span class="nf">multi_head_attention</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">scale</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">to_q_fn</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">to_kv_fn</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">to_out_fn</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                         <span class="n">to_q_v</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">to_kv_v</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">to_out_v</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="multi_head_attention"><a class="viewcode-back" href="../../../../functional/ivy/layers/multi_head_attention.html#ivy.functional.ivy.layers.multi_head_attention">[docs]</a><span class="k">def</span> <span class="nf">multi_head_attention</span><span class="p">(</span>
+    <span class="n">x</span><span class="p">,</span>
+    <span class="n">scale</span><span class="p">,</span>
+    <span class="n">num_heads</span><span class="p">,</span>
+    <span class="n">context</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">mask</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">to_q_fn</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">to_kv_fn</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">to_out_fn</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">to_q_v</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">to_kv_v</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">to_out_v</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Applies multi-head attention to inputs x.</span>
 
 <span class="sd">    Parameters</span>
@@ -396,7 +324,11 @@
     <span class="n">context</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">default</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 
     <span class="c1"># BS x K x (2xHxF)    or    BS x K x (HxF),  BS x K x (HxF)</span>
-    <span class="n">kv</span> <span class="o">=</span> <span class="n">to_kv_fn</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">v</span><span class="o">=</span><span class="n">to_kv_v</span><span class="p">)</span> <span class="k">if</span> <span class="n">ivy</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">to_kv_fn</span><span class="p">)</span> <span class="k">else</span> <span class="n">ivy</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">kv</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">to_kv_fn</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">v</span><span class="o">=</span><span class="n">to_kv_v</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ivy</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">to_kv_fn</span><span class="p">)</span>
+        <span class="k">else</span> <span class="n">ivy</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="p">)</span>
 
     <span class="c1"># BS x K x (HxF),  BS x K x (HxF)</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">kv</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
@@ -405,17 +337,20 @@
         <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">kv</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 
     <span class="c1"># BS x H x Q x F,  BS x H x K x F,  BS x H x K x F</span>
-    <span class="n">q</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">einops_rearrange</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="s1">&#39;... n (h f) -&gt; ... h n f&#39;</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="n">num_heads</span><span class="p">),</span> <span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">))</span>
+    <span class="n">q</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span>
+        <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">einops_rearrange</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="s2">&quot;... n (h f) -&gt; ... h n f&quot;</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="n">num_heads</span><span class="p">),</span>
+        <span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">),</span>
+    <span class="p">)</span>
 
     <span class="c1"># BS x H x Q x K</span>
     <span class="k">if</span> <span class="n">ivy</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">mask</span><span class="p">):</span>
-        <span class="n">mask</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">einops_repeat</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="s1">&#39;... q k -&gt; ... h q k&#39;</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="n">num_heads</span><span class="p">)</span>
+        <span class="n">mask</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">einops_repeat</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="s2">&quot;... q k -&gt; ... h q k&quot;</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="n">num_heads</span><span class="p">)</span>
 
     <span class="c1"># BS x H x Q x F</span>
     <span class="n">sdpa</span> <span class="o">=</span> <span class="n">scaled_dot_product_attention</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">scale</span><span class="p">,</span> <span class="n">mask</span><span class="p">)</span>
 
     <span class="c1"># BS x Q x (HxF)</span>
-    <span class="n">sdpa</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">einops_rearrange</span><span class="p">(</span><span class="n">sdpa</span><span class="p">,</span> <span class="s1">&#39;... h q f -&gt; ... q (h f)&#39;</span><span class="p">)</span>
+    <span class="n">sdpa</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">einops_rearrange</span><span class="p">(</span><span class="n">sdpa</span><span class="p">,</span> <span class="s2">&quot;... h q f -&gt; ... q (h f)&quot;</span><span class="p">)</span>
 
     <span class="c1"># BS x Q x OF</span>
     <span class="k">return</span> <span class="n">to_out_fn</span><span class="p">(</span><span class="n">sdpa</span><span class="p">,</span> <span class="n">v</span><span class="o">=</span><span class="n">to_out_v</span><span class="p">)</span> <span class="k">if</span> <span class="n">ivy</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">to_out_fn</span><span class="p">)</span> <span class="k">else</span> <span class="n">sdpa</span></div>
@@ -423,13 +358,15 @@
 
 <span class="c1"># Convolutions #</span>
 
-<div class="viewcode-block" id="conv1d"><a class="viewcode-back" href="../../../../functional/ivy/layers/conv1d.html#ivy.functional.ivy.layers.conv1d">[docs]</a><span class="k">def</span> <span class="nf">conv1d</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
-           <span class="n">filters</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
-           <span class="n">strides</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-           <span class="n">padding</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-           <span class="n">data_format</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;NWC&#39;</span><span class="p">,</span>
-           <span class="n">dilations</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>\
-           <span class="o">-&gt;</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">:</span>
+
+<div class="viewcode-block" id="conv1d"><a class="viewcode-back" href="../../../../functional/ivy/layers/conv1d.html#ivy.functional.ivy.layers.conv1d">[docs]</a><span class="k">def</span> <span class="nf">conv1d</span><span class="p">(</span>
+    <span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
+    <span class="n">filters</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
+    <span class="n">strides</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">padding</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">data_format</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;NWC&quot;</span><span class="p">,</span>
+    <span class="n">dilations</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;Computes a 1-D convolution given 3-D input x and filters arrays.</span>
 
 <span class="sd">    Parameters</span>
@@ -460,27 +397,31 @@
 <span class="sd">    &gt;&gt;&gt; print(result)</span>
 <span class="sd">    ivy.array([[[0.], [3.], [0.]]])</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">conv1d</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">data_format</span><span class="p">,</span> <span class="n">dilations</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">conv1d</span><span class="p">(</span>
+        <span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">data_format</span><span class="p">,</span> <span class="n">dilations</span>
+    <span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="conv1d_transpose"><a class="viewcode-back" href="../../../../functional/ivy/layers/conv1d_transpose.html#ivy.functional.ivy.layers.conv1d_transpose">[docs]</a><span class="k">def</span> <span class="nf">conv1d_transpose</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">output_shape</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">data_format</span><span class="o">=</span><span class="s1">&#39;NWC&#39;</span><span class="p">,</span> <span class="n">dilations</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="conv1d_transpose"><a class="viewcode-back" href="../../../../functional/ivy/layers/conv1d_transpose.html#ivy.functional.ivy.layers.conv1d_transpose">[docs]</a><span class="k">def</span> <span class="nf">conv1d_transpose</span><span class="p">(</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">output_shape</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">data_format</span><span class="o">=</span><span class="s2">&quot;NWC&quot;</span><span class="p">,</span> <span class="n">dilations</span><span class="o">=</span><span class="mi">1</span>
+<span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Computes a 1-D transpose convolution given 3-D input x and filters arrays.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
 <span class="sd">    x</span>
 <span class="sd">        Input image *[batch_size,w,d_in]*.</span>
-<span class="sd">    filters </span>
+<span class="sd">    filters</span>
 <span class="sd">        Convolution filters *[fw,d_in,d_out]*.</span>
-<span class="sd">    strides </span>
+<span class="sd">    strides</span>
 <span class="sd">        The stride of the sliding window for each dimension of input.</span>
-<span class="sd">    padding </span>
+<span class="sd">    padding</span>
 <span class="sd">        SAME&quot; or &quot;VALID&quot; indicating the algorithm, or list indicating the per-dimension paddings.</span>
-<span class="sd">    output_shape </span>
+<span class="sd">    output_shape</span>
 <span class="sd">        Shape of the output (Default value = None)</span>
-<span class="sd">    data_format </span>
+<span class="sd">    data_format</span>
 <span class="sd">        NWC&quot; or &quot;NCW&quot;. Defaults to &quot;NWC&quot;.</span>
-<span class="sd">    dilations </span>
+<span class="sd">    dilations</span>
 <span class="sd">        The dilation factor for each dimension of input. (Default value = 1)</span>
 
 <span class="sd">    Returns</span>
@@ -489,25 +430,27 @@
 <span class="sd">        The result of the transpose convolution operation.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">conv1d_transpose</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">output_shape</span><span class="p">,</span> <span class="n">data_format</span><span class="p">,</span> <span class="n">dilations</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">conv1d_transpose</span><span class="p">(</span>
+        <span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">output_shape</span><span class="p">,</span> <span class="n">data_format</span><span class="p">,</span> <span class="n">dilations</span>
+    <span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="conv2d"><a class="viewcode-back" href="../../../../functional/ivy/layers/conv2d.html#ivy.functional.ivy.layers.conv2d">[docs]</a><span class="k">def</span> <span class="nf">conv2d</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">data_format</span><span class="o">=</span><span class="s1">&#39;NHWC&#39;</span><span class="p">,</span> <span class="n">dilations</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="conv2d"><a class="viewcode-back" href="../../../../functional/ivy/layers/conv2d.html#ivy.functional.ivy.layers.conv2d">[docs]</a><span class="k">def</span> <span class="nf">conv2d</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">data_format</span><span class="o">=</span><span class="s2">&quot;NHWC&quot;</span><span class="p">,</span> <span class="n">dilations</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Computes a 2-D convolution given 4-D input x and filters arrays.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    x </span>
+<span class="sd">    x</span>
 <span class="sd">        Input image *[batch_size,h,w,d_in]*.</span>
-<span class="sd">    filters </span>
+<span class="sd">    filters</span>
 <span class="sd">        Convolution filters *[fh,fw,d_in,d_out]*.</span>
-<span class="sd">    strides </span>
+<span class="sd">    strides</span>
 <span class="sd">        The stride of the sliding window for each dimension of input.</span>
-<span class="sd">    padding </span>
+<span class="sd">    padding</span>
 <span class="sd">        SAME&quot; or &quot;VALID&quot; indicating the algorithm, or list indicating the per-dimension paddings.</span>
-<span class="sd">    data_format </span>
+<span class="sd">    data_format</span>
 <span class="sd">        NHWC&quot; or &quot;NCHW&quot;. Defaults to &quot;NHWC&quot;.</span>
-<span class="sd">    dilations </span>
+<span class="sd">    dilations</span>
 <span class="sd">        The dilation factor for each dimension of input. (Default value = 1)</span>
 
 <span class="sd">    Returns</span>
@@ -516,27 +459,31 @@
 <span class="sd">        The result of the convolution operation.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">conv2d</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">data_format</span><span class="p">,</span> <span class="n">dilations</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">conv2d</span><span class="p">(</span>
+        <span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">data_format</span><span class="p">,</span> <span class="n">dilations</span>
+    <span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="conv2d_transpose"><a class="viewcode-back" href="../../../../functional/ivy/layers/conv2d_transpose.html#ivy.functional.ivy.layers.conv2d_transpose">[docs]</a><span class="k">def</span> <span class="nf">conv2d_transpose</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">output_shape</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">data_format</span><span class="o">=</span><span class="s1">&#39;NHWC&#39;</span><span class="p">,</span> <span class="n">dilations</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="conv2d_transpose"><a class="viewcode-back" href="../../../../functional/ivy/layers/conv2d_transpose.html#ivy.functional.ivy.layers.conv2d_transpose">[docs]</a><span class="k">def</span> <span class="nf">conv2d_transpose</span><span class="p">(</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">output_shape</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">data_format</span><span class="o">=</span><span class="s2">&quot;NHWC&quot;</span><span class="p">,</span> <span class="n">dilations</span><span class="o">=</span><span class="mi">1</span>
+<span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Computes a 2-D transpose convolution given 4-D input x and filters arrays.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    x </span>
+<span class="sd">    x</span>
 <span class="sd">        Input image *[batch_size,h,w,d_in]*.</span>
-<span class="sd">    filters </span>
+<span class="sd">    filters</span>
 <span class="sd">        Convolution filters *[fh,fw,d_in,d_out]*.</span>
-<span class="sd">    strides </span>
+<span class="sd">    strides</span>
 <span class="sd">        The stride of the sliding window for each dimension of input.</span>
-<span class="sd">    padding </span>
+<span class="sd">    padding</span>
 <span class="sd">        SAME&quot; or &quot;VALID&quot; indicating the algorithm, or list indicating the per-dimension paddings.</span>
-<span class="sd">    output_shape </span>
+<span class="sd">    output_shape</span>
 <span class="sd">        Shape of the output (Default value = None)</span>
-<span class="sd">    data_format </span>
+<span class="sd">    data_format</span>
 <span class="sd">        NHWC&quot; or &quot;NCHW&quot;. Defaults to &quot;NHWC&quot;.</span>
-<span class="sd">    dilations </span>
+<span class="sd">    dilations</span>
 <span class="sd">        The dilation factor for each dimension of input. (Default value = 1)</span>
 
 <span class="sd">    Returns</span>
@@ -545,25 +492,27 @@
 <span class="sd">        The result of the transpose convolution operation.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">conv2d_transpose</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">output_shape</span><span class="p">,</span> <span class="n">data_format</span><span class="p">,</span> <span class="n">dilations</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">conv2d_transpose</span><span class="p">(</span>
+        <span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">output_shape</span><span class="p">,</span> <span class="n">data_format</span><span class="p">,</span> <span class="n">dilations</span>
+    <span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="depthwise_conv2d"><a class="viewcode-back" href="../../../../functional/ivy/layers/depthwise_conv2d.html#ivy.functional.ivy.layers.depthwise_conv2d">[docs]</a><span class="k">def</span> <span class="nf">depthwise_conv2d</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">data_format</span><span class="o">=</span><span class="s1">&#39;NHWC&#39;</span><span class="p">,</span> <span class="n">dilations</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="depthwise_conv2d"><a class="viewcode-back" href="../../../../functional/ivy/layers/depthwise_conv2d.html#ivy.functional.ivy.layers.depthwise_conv2d">[docs]</a><span class="k">def</span> <span class="nf">depthwise_conv2d</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">data_format</span><span class="o">=</span><span class="s2">&quot;NHWC&quot;</span><span class="p">,</span> <span class="n">dilations</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Computes a 2-D depthwise convolution given 4-D input x and filters arrays.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    x </span>
+<span class="sd">    x</span>
 <span class="sd">        Input image *[batch_size,h,w,d]*.</span>
-<span class="sd">    filters </span>
+<span class="sd">    filters</span>
 <span class="sd">        Convolution filters *[fh,fw,d]*.</span>
-<span class="sd">    strides </span>
+<span class="sd">    strides</span>
 <span class="sd">        The stride of the sliding window for each dimension of input.</span>
-<span class="sd">    padding </span>
+<span class="sd">    padding</span>
 <span class="sd">        SAME&quot; or &quot;VALID&quot; indicating the algorithm, or list indicating the per-dimension paddings.</span>
-<span class="sd">    data_format </span>
+<span class="sd">    data_format</span>
 <span class="sd">        NHWC&quot; or &quot;NCHW&quot;. Defaults to &quot;NHWC&quot;.</span>
-<span class="sd">    dilations </span>
+<span class="sd">    dilations</span>
 <span class="sd">        The dilation factor for each dimension of input. (Default value = 1)</span>
 
 <span class="sd">    Returns</span>
@@ -572,26 +521,28 @@
 <span class="sd">        The result of the convolution operation.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">depthwise_conv2d</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">data_format</span><span class="p">,</span> <span class="n">dilations</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">depthwise_conv2d</span><span class="p">(</span>
+        <span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">data_format</span><span class="p">,</span> <span class="n">dilations</span>
+    <span class="p">)</span></div>
 
 
 <span class="c1"># noinspection PyDefaultArgument</span>
-<div class="viewcode-block" id="conv3d"><a class="viewcode-back" href="../../../../functional/ivy/layers/conv3d.html#ivy.functional.ivy.layers.conv3d">[docs]</a><span class="k">def</span> <span class="nf">conv3d</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">data_format</span><span class="o">=</span><span class="s1">&#39;NDHWC&#39;</span><span class="p">,</span> <span class="n">dilations</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="conv3d"><a class="viewcode-back" href="../../../../functional/ivy/layers/conv3d.html#ivy.functional.ivy.layers.conv3d">[docs]</a><span class="k">def</span> <span class="nf">conv3d</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">data_format</span><span class="o">=</span><span class="s2">&quot;NDHWC&quot;</span><span class="p">,</span> <span class="n">dilations</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Computes a 3-D convolution given 5-D input x and filters arrays.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    x </span>
+<span class="sd">    x</span>
 <span class="sd">        Input volume *[batch_size,d,h,w,d_in]*.</span>
-<span class="sd">    filters </span>
+<span class="sd">    filters</span>
 <span class="sd">        Convolution filters *[fd,fh,fw,d_in,d_out]*.</span>
-<span class="sd">    strides </span>
+<span class="sd">    strides</span>
 <span class="sd">        The stride of the sliding window for each dimension of input.</span>
-<span class="sd">    padding </span>
+<span class="sd">    padding</span>
 <span class="sd">        SAME&quot; or &quot;VALID&quot; indicating the algorithm, or list indicating the per-dimension paddings.</span>
-<span class="sd">    data_format </span>
+<span class="sd">    data_format</span>
 <span class="sd">        NDHWC&quot; or &quot;NCDHW&quot;. Defaults to &quot;NDHWC&quot;.</span>
-<span class="sd">    dilations </span>
+<span class="sd">    dilations</span>
 <span class="sd">        The dilation factor for each dimension of input. (Default value = 1)</span>
 
 <span class="sd">    Returns</span>
@@ -600,27 +551,31 @@
 <span class="sd">        The result of the convolution operation.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">conv3d</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">data_format</span><span class="p">,</span> <span class="n">dilations</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">conv3d</span><span class="p">(</span>
+        <span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">data_format</span><span class="p">,</span> <span class="n">dilations</span>
+    <span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="conv3d_transpose"><a class="viewcode-back" href="../../../../functional/ivy/layers/conv3d_transpose.html#ivy.functional.ivy.layers.conv3d_transpose">[docs]</a><span class="k">def</span> <span class="nf">conv3d_transpose</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">output_shape</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">data_format</span><span class="o">=</span><span class="s1">&#39;NDHWC&#39;</span><span class="p">,</span> <span class="n">dilations</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="conv3d_transpose"><a class="viewcode-back" href="../../../../functional/ivy/layers/conv3d_transpose.html#ivy.functional.ivy.layers.conv3d_transpose">[docs]</a><span class="k">def</span> <span class="nf">conv3d_transpose</span><span class="p">(</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">output_shape</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">data_format</span><span class="o">=</span><span class="s2">&quot;NDHWC&quot;</span><span class="p">,</span> <span class="n">dilations</span><span class="o">=</span><span class="mi">1</span>
+<span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Computes a 3-D transpose convolution given 5-D input x and filters arrays.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    x </span>
+<span class="sd">    x</span>
 <span class="sd">        Input image *[batch_size,d,h,w,d_in]*.</span>
-<span class="sd">    filters </span>
+<span class="sd">    filters</span>
 <span class="sd">        Convolution filters *[fd,fh,fw,d_in,d_out]*.</span>
-<span class="sd">    strides </span>
+<span class="sd">    strides</span>
 <span class="sd">        The stride of the sliding window for each dimension of input.</span>
-<span class="sd">    padding </span>
+<span class="sd">    padding</span>
 <span class="sd">        SAME&quot; or &quot;VALID&quot; indicating the algorithm, or list indicating the per-dimension paddings.</span>
-<span class="sd">    output_shape </span>
+<span class="sd">    output_shape</span>
 <span class="sd">        Shape of the output (Default value = None)</span>
-<span class="sd">    data_format </span>
+<span class="sd">    data_format</span>
 <span class="sd">        NDHWC&quot; or &quot;NCDHW&quot;. Defaults to &quot;NDHWC&quot;.</span>
-<span class="sd">    dilations </span>
+<span class="sd">    dilations</span>
 <span class="sd">        The dilation factor for each dimension of input. (Default value = 1)</span>
 
 <span class="sd">    Returns</span>
@@ -629,29 +584,34 @@
 <span class="sd">        The result of the transpose convolution operation.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">conv3d_transpose</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">output_shape</span><span class="p">,</span> <span class="n">data_format</span><span class="p">,</span> <span class="n">dilations</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">conv3d_transpose</span><span class="p">(</span>
+        <span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">strides</span><span class="p">,</span> <span class="n">padding</span><span class="p">,</span> <span class="n">output_shape</span><span class="p">,</span> <span class="n">data_format</span><span class="p">,</span> <span class="n">dilations</span>
+    <span class="p">)</span></div>
 
 
 <span class="c1"># LSTM #</span>
 
-<div class="viewcode-block" id="lstm_update"><a class="viewcode-back" href="../../../../functional/ivy/layers/lstm_update.html#ivy.functional.ivy.layers.lstm_update">[docs]</a><span class="k">def</span> <span class="nf">lstm_update</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">init_h</span><span class="p">,</span> <span class="n">init_c</span><span class="p">,</span> <span class="n">kernel</span><span class="p">,</span> <span class="n">recurrent_kernel</span><span class="p">,</span> <span class="n">bias</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">recurrent_bias</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+
+<div class="viewcode-block" id="lstm_update"><a class="viewcode-back" href="../../../../functional/ivy/layers/lstm_update.html#ivy.functional.ivy.layers.lstm_update">[docs]</a><span class="k">def</span> <span class="nf">lstm_update</span><span class="p">(</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">init_h</span><span class="p">,</span> <span class="n">init_c</span><span class="p">,</span> <span class="n">kernel</span><span class="p">,</span> <span class="n">recurrent_kernel</span><span class="p">,</span> <span class="n">bias</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">recurrent_bias</span><span class="o">=</span><span class="kc">None</span>
+<span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Perform long-short term memory update by unrolling time dimension of input array.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    x </span>
+<span class="sd">    x</span>
 <span class="sd">        input tensor of LSTM layer *[batch_shape, t, in]*.</span>
-<span class="sd">    init_h </span>
+<span class="sd">    init_h</span>
 <span class="sd">        initial state tensor for the cell output *[batch_shape, out]*.</span>
-<span class="sd">    init_c </span>
+<span class="sd">    init_c</span>
 <span class="sd">        initial state tensor for the cell hidden state *[batch_shape, out]*.</span>
-<span class="sd">    kernel </span>
+<span class="sd">    kernel</span>
 <span class="sd">        weights for cell kernel *[in, 4 x out]*.</span>
-<span class="sd">    recurrent_kernel </span>
+<span class="sd">    recurrent_kernel</span>
 <span class="sd">        weights for cell recurrent kernel *[out, 4 x out]*.</span>
-<span class="sd">    bias </span>
+<span class="sd">    bias</span>
 <span class="sd">        bias for cell kernel *[4 x out]*. (Default value = None)</span>
-<span class="sd">    recurrent_bias </span>
+<span class="sd">    recurrent_bias</span>
 <span class="sd">        bias for cell recurrent kernel *[4 x out]*. (Default value = None)</span>
 
 <span class="sd">    Returns</span>
@@ -670,8 +630,10 @@
 
     <span class="c1"># input kernel</span>
     <span class="n">Wi</span> <span class="o">=</span> <span class="n">kernel</span>
-    <span class="n">Wi_x</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">ivy</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">x_flat</span><span class="p">,</span> <span class="n">Wi</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">bias</span> <span class="k">if</span> <span class="n">bias</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="mi">0</span><span class="p">),</span>
-                       <span class="n">batch_shape</span> <span class="o">+</span> <span class="p">[</span><span class="n">timesteps</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">Wi_x</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span>
+        <span class="n">ivy</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">x_flat</span><span class="p">,</span> <span class="n">Wi</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">bias</span> <span class="k">if</span> <span class="n">bias</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="mi">0</span><span class="p">),</span>
+        <span class="n">batch_shape</span> <span class="o">+</span> <span class="p">[</span><span class="n">timesteps</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span>
+    <span class="p">)</span>
     <span class="n">Wii_x</span><span class="p">,</span> <span class="n">Wif_x</span><span class="p">,</span> <span class="n">Wig_x</span><span class="p">,</span> <span class="n">Wio_x</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">Wi_x</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 
     <span class="c1"># recurrent kernel</span>
@@ -685,19 +647,27 @@
     <span class="n">hts_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
 
     <span class="c1"># unrolled time dimension with lstm steps</span>
-    <span class="k">for</span> <span class="n">Wii_xt</span><span class="p">,</span> <span class="n">Wif_xt</span><span class="p">,</span> <span class="n">Wig_xt</span><span class="p">,</span> <span class="n">Wio_xt</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">ivy</span><span class="o">.</span><span class="n">unstack</span><span class="p">(</span><span class="n">Wii_x</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">2</span><span class="p">),</span> <span class="n">ivy</span><span class="o">.</span><span class="n">unstack</span><span class="p">(</span><span class="n">Wif_x</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">2</span><span class="p">),</span>
-                                              <span class="n">ivy</span><span class="o">.</span><span class="n">unstack</span><span class="p">(</span><span class="n">Wig_x</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">2</span><span class="p">),</span> <span class="n">ivy</span><span class="o">.</span><span class="n">unstack</span><span class="p">(</span><span class="n">Wio_x</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">2</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">Wii_xt</span><span class="p">,</span> <span class="n">Wif_xt</span><span class="p">,</span> <span class="n">Wig_xt</span><span class="p">,</span> <span class="n">Wio_xt</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span>
+        <span class="n">ivy</span><span class="o">.</span><span class="n">unstack</span><span class="p">(</span><span class="n">Wii_x</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">2</span><span class="p">),</span>
+        <span class="n">ivy</span><span class="o">.</span><span class="n">unstack</span><span class="p">(</span><span class="n">Wif_x</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">2</span><span class="p">),</span>
+        <span class="n">ivy</span><span class="o">.</span><span class="n">unstack</span><span class="p">(</span><span class="n">Wig_x</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">2</span><span class="p">),</span>
+        <span class="n">ivy</span><span class="o">.</span><span class="n">unstack</span><span class="p">(</span><span class="n">Wio_x</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">2</span><span class="p">),</span>
+    <span class="p">):</span>
         <span class="n">htm1</span> <span class="o">=</span> <span class="n">ht</span>
         <span class="n">ctm1</span> <span class="o">=</span> <span class="n">ct</span>
 
-        <span class="n">Wh_htm1</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">htm1</span><span class="p">,</span> <span class="n">Wh</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">recurrent_bias</span> <span class="k">if</span> <span class="n">recurrent_bias</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
-        <span class="n">Whi_htm1</span><span class="p">,</span> <span class="n">Whf_htm1</span><span class="p">,</span> <span class="n">Whg_htm1</span><span class="p">,</span> <span class="n">Who_htm1</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">Wh_htm1</span><span class="p">,</span> <span class="n">num_or_size_splits</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">Wh_htm1</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">htm1</span><span class="p">,</span> <span class="n">Wh</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span>
+            <span class="n">recurrent_bias</span> <span class="k">if</span> <span class="n">recurrent_bias</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="mi">0</span>
+        <span class="p">)</span>
+        <span class="n">Whi_htm1</span><span class="p">,</span> <span class="n">Whf_htm1</span><span class="p">,</span> <span class="n">Whg_htm1</span><span class="p">,</span> <span class="n">Who_htm1</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">split</span><span class="p">(</span>
+            <span class="n">Wh_htm1</span><span class="p">,</span> <span class="n">num_or_size_splits</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span>
+        <span class="p">)</span>
 
         <span class="n">it</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">Wii_xt</span> <span class="o">+</span> <span class="n">Whi_htm1</span><span class="p">)</span>
         <span class="n">ft</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">Wif_xt</span> <span class="o">+</span> <span class="n">Whf_htm1</span><span class="p">)</span>
         <span class="n">gt</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="n">Wig_xt</span> <span class="o">+</span> <span class="n">Whg_htm1</span><span class="p">)</span>
         <span class="n">ot</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">Wio_xt</span> <span class="o">+</span> <span class="n">Who_htm1</span><span class="p">)</span>
-        <span class="n">ct</span> <span class="o">=</span> <span class="n">ft</span><span class="o">*</span><span class="n">ctm1</span> <span class="o">+</span> <span class="n">it</span><span class="o">*</span><span class="n">gt</span>
+        <span class="n">ct</span> <span class="o">=</span> <span class="n">ft</span> <span class="o">*</span> <span class="n">ctm1</span> <span class="o">+</span> <span class="n">it</span> <span class="o">*</span> <span class="n">gt</span>
         <span class="n">ht</span> <span class="o">=</span> <span class="n">ot</span> <span class="o">*</span> <span class="n">ivy</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="n">ct</span><span class="p">)</span>
 
         <span class="n">hts_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ivy</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">ht</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">))</span>
@@ -706,42 +676,30 @@
 </pre></div>
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2020, Ivy Team
-
-    </p>
+    <p>&#169; Copyright 2020, Ivy Team.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
