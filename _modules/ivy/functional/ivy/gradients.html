@@ -118,9 +118,7 @@
            <div itemprop="articleBody">
              
   <h1>Source code for ivy.functional.ivy.gradients</h1><div class="highlight"><pre>
-<span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">Collection of gradient Ivy functions.</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span></span><span class="sd">&quot;&quot;&quot;Collection of gradient Ivy functions.&quot;&quot;&quot;</span>
 
 <span class="c1"># local</span>
 <span class="kn">import</span> <span class="nn">ivy</span>
@@ -136,7 +134,7 @@
 
 
 <div class="viewcode-block" id="GradientTracking"><a class="viewcode-back" href="../../../../functional/ivy/gradients.html#ivy.functional.ivy.gradients.GradientTracking">[docs]</a><span class="k">class</span> <span class="nc">GradientTracking</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot; &quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot;&quot;&quot;&quot;</span>
 
     <span class="c1"># noinspection PyShadowingNames</span>
 <div class="viewcode-block" id="GradientTracking.__init__"><a class="viewcode-back" href="../../../../functional/ivy/gradients.html#ivy.functional.ivy.gradients.GradientTracking.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">with_grads</span><span class="p">):</span>
@@ -155,7 +153,7 @@
 
 <span class="c1"># noinspection PyShadowingNames</span>
 <div class="viewcode-block" id="with_grads"><a class="viewcode-back" href="../../../../functional/ivy/gradients/with_grads.html#ivy.functional.ivy.gradients.with_grads">[docs]</a><span class="k">def</span> <span class="nf">with_grads</span><span class="p">(</span><span class="n">with_grads</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Summary.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
@@ -164,7 +162,7 @@
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">     ret</span>
+<span class="sd">    ret</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">_ivy</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">with_grads</span><span class="p">):</span>
@@ -178,15 +176,11 @@
 
 <span class="c1"># noinspection PyShadowingNames</span>
 <div class="viewcode-block" id="set_with_grads"><a class="viewcode-back" href="../../../../functional/ivy/gradients/set_with_grads.html#ivy.functional.ivy.gradients.set_with_grads">[docs]</a><span class="k">def</span> <span class="nf">set_with_grads</span><span class="p">(</span><span class="n">with_grads</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Summary.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
 <span class="sd">    with_grads</span>
-
-
-<span class="sd">    Returns</span>
-<span class="sd">    -------</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">assert</span> <span class="n">with_grads</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>
@@ -195,7 +189,7 @@
 
 
 <div class="viewcode-block" id="unset_with_grads"><a class="viewcode-back" href="../../../../functional/ivy/gradients/unset_with_grads.html#ivy.functional.ivy.gradients.unset_with_grads">[docs]</a><span class="k">def</span> <span class="nf">unset_with_grads</span><span class="p">():</span>
-    <span class="sd">&quot;&quot;&quot; &quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot;&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">with_grads_stack</span>
     <span class="k">if</span> <span class="n">with_grads_stack</span><span class="p">:</span>
         <span class="n">with_grads_stack</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span></div>
@@ -214,7 +208,7 @@
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">     ret</span>
+<span class="sd">    ret</span>
 <span class="sd">        An ivy variable, supporting gradient computation.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -235,7 +229,7 @@
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">     ret</span>
+<span class="sd">    ret</span>
 <span class="sd">        Boolean, true if x is a trainable variable, false otherwise.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -243,8 +237,10 @@
 
 
 <div class="viewcode-block" id="variable_data"><a class="viewcode-back" href="../../../../functional/ivy/gradients/variable_data.html#ivy.functional.ivy.gradients.variable_data">[docs]</a><span class="k">def</span> <span class="nf">variable_data</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Some backends wrap arrays in a dedicated variable class. For those frameworks, this function returns that wrapped</span>
-<span class="sd">    array. For frameworks which do not have a dedicated variable class, the function returns the data passed in.</span>
+    <span class="sd">&quot;&quot;&quot;Some backends wrap arrays in a dedicated variable class. For those</span>
+<span class="sd">    frameworks, this function returns that wrapped array. For frameworks which</span>
+<span class="sd">    do not have a dedicated variable class, the function returns the data</span>
+<span class="sd">    passed in.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
@@ -253,7 +249,7 @@
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">     ret</span>
+<span class="sd">    ret</span>
 <span class="sd">        The internal data stored by the variable</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -275,7 +271,7 @@
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">     ret</span>
+<span class="sd">    ret</span>
 <span class="sd">        The same array x, but with no gradient information.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -286,8 +282,9 @@
 
 
 <div class="viewcode-block" id="execute_with_gradients"><a class="viewcode-back" href="../../../../functional/ivy/gradients/execute_with_gradients.html#ivy.functional.ivy.gradients.execute_with_gradients">[docs]</a><span class="k">def</span> <span class="nf">execute_with_gradients</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">xs</span><span class="p">,</span> <span class="n">retain_grads</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Call function func with input of xs variables, and return func first output y, the gradients [dy/dx for x in xs],</span>
-<span class="sd">    and any other function outputs after the returned y value</span>
+    <span class="sd">&quot;&quot;&quot;Call function func with input of xs variables, and return func first</span>
+<span class="sd">    output y, the gradients [dy/dx for x in xs], and any other function outputs</span>
+<span class="sd">    after the returned y value.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
@@ -300,7 +297,7 @@
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">     ret</span>
+<span class="sd">    ret</span>
 <span class="sd">        the function first output y, the gradients [dy/dx for x in xs], and any other extra function outputs</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -311,8 +308,9 @@
 
 
 <div class="viewcode-block" id="adam_step"><a class="viewcode-back" href="../../../../functional/ivy/gradients/adam_step.html#ivy.functional.ivy.gradients.adam_step">[docs]</a><span class="k">def</span> <span class="nf">adam_step</span><span class="p">(</span><span class="n">dcdws</span><span class="p">,</span> <span class="n">mw</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">beta1</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">beta2</span><span class="o">=</span><span class="mf">0.999</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">1e-7</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Compute adam step delta, given the derivatives of some cost c with respect to ws, using ADAM update.</span>
-<span class="sd">    `[reference] &lt;https://en.wikipedia.org/wiki/Stochastic_gradient_descent#Adam&gt;`_</span>
+    <span class="sd">&quot;&quot;&quot;Compute adam step delta, given the derivatives of some cost c with</span>
+<span class="sd">    respect to ws, using ADAM update. `[reference]</span>
+<span class="sd">    &lt;https://en.wikipedia.org/wiki/Stochastic_gradient_descent#Adam&gt;`_</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
@@ -333,7 +331,7 @@
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">     ret</span>
+<span class="sd">    ret</span>
 <span class="sd">        The adam step delta.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -351,8 +349,8 @@
 
 
 <div class="viewcode-block" id="optimizer_update"><a class="viewcode-back" href="../../../../functional/ivy/gradients/optimizer_update.html#ivy.functional.ivy.gradients.optimizer_update">[docs]</a><span class="k">def</span> <span class="nf">optimizer_update</span><span class="p">(</span><span class="n">ws</span><span class="p">,</span> <span class="n">effective_grads</span><span class="p">,</span> <span class="n">lr</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">stop_gradients</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Update weights ws of some function, given the true or effective derivatives of some cost c with respect to ws,</span>
-<span class="sd">    [dc/dw for w in ws].</span>
+    <span class="sd">&quot;&quot;&quot;Update weights ws of some function, given the true or effective</span>
+<span class="sd">    derivatives of some cost c with respect to ws, [dc/dw for w in ws].</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
@@ -372,7 +370,7 @@
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">     ret</span>
+<span class="sd">    ret</span>
 <span class="sd">        The new function weights ws_new, following the optimizer updates.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -391,7 +389,8 @@
 
 
 <div class="viewcode-block" id="gradient_descent_update"><a class="viewcode-back" href="../../../../functional/ivy/gradients/gradient_descent_update.html#ivy.functional.ivy.gradients.gradient_descent_update">[docs]</a><span class="k">def</span> <span class="nf">gradient_descent_update</span><span class="p">(</span><span class="n">ws</span><span class="p">,</span> <span class="n">dcdws</span><span class="p">,</span> <span class="n">lr</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">stop_gradients</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Update weights ws of some function, given the derivatives of some cost c with respect to ws, [dc/dw for w in ws].</span>
+    <span class="sd">&quot;&quot;&quot;Update weights ws of some function, given the derivatives of some cost c</span>
+<span class="sd">    with respect to ws, [dc/dw for w in ws].</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
@@ -411,7 +410,7 @@
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">     ret</span>
+<span class="sd">    ret</span>
 <span class="sd">        The new function weights ws_new, following the gradient descent updates.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -419,8 +418,9 @@
 
 
 <div class="viewcode-block" id="lars_update"><a class="viewcode-back" href="../../../../functional/ivy/gradients/lars_update.html#ivy.functional.ivy.gradients.lars_update">[docs]</a><span class="k">def</span> <span class="nf">lars_update</span><span class="p">(</span><span class="n">ws</span><span class="p">,</span> <span class="n">dcdws</span><span class="p">,</span> <span class="n">lr</span><span class="p">,</span> <span class="n">decay_lambda</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">stop_gradients</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Update weights ws of some function, given the derivatives of some cost c with respect to ws, [dc/dw for w in ws],</span>
-<span class="sd">    by applying Layerwise Adaptive Rate Scaling (LARS) method.</span>
+    <span class="sd">&quot;&quot;&quot;Update weights ws of some function, given the derivatives of some cost c</span>
+<span class="sd">    with respect to ws, [dc/dw for w in ws], by applying Layerwise Adaptive</span>
+<span class="sd">    Rate Scaling (LARS) method.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
@@ -442,7 +442,7 @@
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">     ret</span>
+<span class="sd">    ret</span>
 <span class="sd">        The new function weights ws_new, following the LARS updates.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -466,8 +466,9 @@
     <span class="n">inplace</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
     <span class="n">stop_gradients</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Update weights ws of some function, given the derivatives of some cost c with respect to ws, using ADAM update.</span>
-<span class="sd">    `[reference] &lt;https://en.wikipedia.org/wiki/Stochastic_gradient_descent#Adam&gt;`_</span>
+    <span class="sd">&quot;&quot;&quot;Update weights ws of some function, given the derivatives of some cost c</span>
+<span class="sd">    with respect to ws, using ADAM update. `[reference]</span>
+<span class="sd">    &lt;https://en.wikipedia.org/wiki/Stochastic_gradient_descent#Adam&gt;`_</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
@@ -499,7 +500,7 @@
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">     ret</span>
+<span class="sd">    ret</span>
 <span class="sd">        The new function weights ws_new, and also new mw and vw, following the adam updates.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -524,8 +525,8 @@
     <span class="n">inplace</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
     <span class="n">stop_gradients</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Update weights ws of some function, given the derivatives of some cost c with respect to ws, [dc/dw for w in ws],</span>
-<span class="sd">    by applying LAMB method.</span>
+    <span class="sd">&quot;&quot;&quot;Update weights ws of some function, given the derivatives of some cost c</span>
+<span class="sd">    with respect to ws, [dc/dw for w in ws], by applying LAMB method.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
@@ -561,7 +562,7 @@
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">     ret</span>
+<span class="sd">    ret</span>
 <span class="sd">        The new function weights ws_new, following the LARS updates.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
