@@ -583,6 +583,23 @@ The mathematical signs of <code class="docutils literal notranslate"><span class
 <li><p><strong>out</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Array</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">NativeArray</span></code>]]) – optional output array, for writing the result to. It must have a shape that the inputs broadcast to. (default: <code class="docutils literal notranslate"><span class="pre">None</span></code>)</p></li>
 <li><p><strong>Returns</strong> – </p></li>
 <li><p><strong>ret</strong> – out (array) – an array containing the element-wise results. The returned array must have a data type determined by <span class="xref std std-ref">Type Promotion Rules</span>.</p></li>
+<li><p><strong>Exemples</strong> – </p></li>
+<li><p><strong>ivy.array</strong><strong>(</strong><strong>[</strong><strong>-1</strong> (<em>&gt;&gt;&gt; lhs =</em>) – </p></li>
+<li><p><strong>-2</strong> – </p></li>
+<li><p><strong>-3</strong> – </p></li>
+<li><p><strong>-2</strong><strong>]</strong> – </p></li>
+<li><p><strong>dtype=ivy.int64</strong><strong>)</strong> – </p></li>
+<li><p><strong>ivy.array</strong><strong>(</strong><strong>[</strong><strong>4</strong> (<em>&gt;&gt;&gt; rhs =</em>) – </p></li>
+<li><p><strong>3</strong> – </p></li>
+<li><p><strong>2</strong> – </p></li>
+<li><p><strong>1</strong><strong>]</strong> – </p></li>
+<li><p><strong>dtype=ivy.int64</strong><strong>)</strong> – </p></li>
+<li><p><strong>print</strong><strong>(</strong><strong>bitwise_right_shift</strong><strong>(</strong><strong>lhs</strong> (<em>&gt;&gt;&gt;</em>) – </p></li>
+<li><p><strong>rhs</strong><strong>)</strong><strong>)</strong> – </p></li>
+<li><p><strong>ivy.array</strong><strong>(</strong><strong>[</strong><strong>-1</strong> – </p></li>
+<li><p><strong>-1</strong> – </p></li>
+<li><p><strong>-1</strong> – </p></li>
+<li><p><strong>-1</strong><strong>]</strong><strong>)</strong> – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type</dt>
