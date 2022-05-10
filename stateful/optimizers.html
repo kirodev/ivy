@@ -144,13 +144,18 @@
 <li><p><strong>lr</strong> (<em>float</em><em>, </em><em>optional</em>) – Learning rate, default is 1e-4.</p></li>
 <li><p><strong>beta1</strong> (<em>float</em><em>, </em><em>optional</em>) – gradient forgetting factor, default is 0.9</p></li>
 <li><p><strong>beta2</strong> (<em>float</em><em>, </em><em>optional</em>) – second moment of gradient forgetting factor, default is 0.999</p></li>
-<li><p><strong>epsilon</strong> (<em>float</em><em>, </em><em>optional</em>) – divisor during adam update, preventing division by zero, default is 1e-07</p></li>
-<li><p><strong>inplace</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to update the variables in-place, or to create new variable handles.
-This is only relevant for frameworks with stateful variables such as PyTorch.
-Default is True, provided the backend framework supports it.</p></li>
-<li><p><strong>stop_gradients</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to stop the gradients of the variables after each gradient step. Default is True.</p></li>
-<li><p><strong>compile_on_next_step</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to compile the optimizer on the next step. Default is False.</p></li>
-<li><p><strong>device</strong> (<em>ivy.Device</em><em>, </em><em>optional</em>) – device on which to create the layer’s variables ‘cuda:0’, ‘cuda:1’, ‘cpu’ etc.</p></li>
+<li><p><strong>epsilon</strong> (<em>float</em><em>, </em><em>optional</em>) – divisor during adam update, preventing division by zero, default
+is 1e-07</p></li>
+<li><p><strong>inplace</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to update the variables in-place, or to create new
+variable handles. This is only relevant for frameworks with
+stateful variables such as PyTorch. Default is True, provided
+the backend framework supports it.</p></li>
+<li><p><strong>stop_gradients</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to stop the gradients of the variables after each
+gradient step. Default is True.</p></li>
+<li><p><strong>compile_on_next_step</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to compile the optimizer on the next step.
+Default is False.</p></li>
+<li><p><strong>device</strong> (<em>ivy.Device</em><em>, </em><em>optional</em>) – device on which to create the layer’s variables ‘cuda:0’,
+‘cuda:1’, ‘cpu’ etc.</p></li>
 </ul>
 </dd>
 </dl>
@@ -188,16 +193,22 @@ Default is True, provided the backend framework supports it.</p></li>
 <li><p><strong>lr</strong> (<em>float</em><em>, </em><em>optional</em>) – Learning rate, default is 1e-4.</p></li>
 <li><p><strong>beta1</strong> (<em>float</em><em>, </em><em>optional</em>) – gradient forgetting factor, default is 0.9</p></li>
 <li><p><strong>beta2</strong> (<em>float</em><em>, </em><em>optional</em>) – second moment of gradient forgetting factor, default is 0.999</p></li>
-<li><p><strong>epsilon</strong> (<em>float</em><em>, </em><em>optional</em>) – divisor during adam update, preventing division by zero, default is 1e-07</p></li>
-<li><p><strong>max_trust_ratio</strong> (<em>float</em><em>, </em><em>optional</em>) – The max value of the trust ratio; the ratio between the norm of the layer weights and
-norm of gradients update. Default is 10.</p></li>
+<li><p><strong>epsilon</strong> (<em>float</em><em>, </em><em>optional</em>) – divisor during adam update, preventing division by zero, default
+is 1e-07</p></li>
+<li><p><strong>max_trust_ratio</strong> (<em>float</em><em>, </em><em>optional</em>) – The max value of the trust ratio; the ratio between the
+norm of the layer weights and norm of gradients update.
+Default is 10.</p></li>
 <li><p><strong>decay_lambda</strong> (<em>float</em><em>, </em><em>optional</em>) – The factor used for weight decay. Default is zero.</p></li>
-<li><p><strong>inplace</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to update the variables in-place, or to create new variable handles.
-This is only relevant for frameworks with stateful variables such as PyTorch.
-Default is True, provided the backend framework supports it.</p></li>
-<li><p><strong>stop_gradients</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to stop the gradients of the variables after each gradient step. Default is True.</p></li>
-<li><p><strong>compile_on_next_step</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to compile the optimizer on the next step. Default is False.</p></li>
-<li><p><strong>device</strong> (<em>ivy.Device</em><em>, </em><em>optional</em>) – device on which to create the layer’s variables ‘cuda:0’, ‘cuda:1’, ‘cpu’ etc.</p></li>
+<li><p><strong>inplace</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to update the variables in-place, or to create new
+variable handles. This is only relevant for frameworks with
+stateful variables such as PyTorch. Default is True, provided
+the backend framework supports it.</p></li>
+<li><p><strong>stop_gradients</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to stop the gradients of the variables after each
+gradient step. Default is True.</p></li>
+<li><p><strong>compile_on_next_step</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to compile the optimizer on the next step.
+Default is False.</p></li>
+<li><p><strong>device</strong> (<em>ivy.Device</em><em>, </em><em>optional</em>) – device on which to create the layer’s variables ‘cuda:0’,
+‘cuda:1’, ‘cpu’ etc.</p></li>
 </ul>
 </dd>
 </dl>
@@ -234,11 +245,14 @@ Default is True, provided the backend framework supports it.</p></li>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>lr</strong> (<em>float</em><em>, </em><em>optional</em>) – Learning rate, default is 1e-4.</p></li>
 <li><p><strong>decay_lambda</strong> (<em>float</em><em>, </em><em>optional</em>) – The factor used for weight decay. Default is zero.</p></li>
-<li><p><strong>inplace</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to update the variables in-place, or to create new variable handles.
-This is only relevant for frameworks with stateful variables such as PyTorch.
-Default is True, provided the backend framework supports it.</p></li>
-<li><p><strong>stop_gradients</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to stop the gradients of the variables after each gradient step. Default is True.</p></li>
-<li><p><strong>compile_on_next_step</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to compile the optimizer on the next step. Default is False.</p></li>
+<li><p><strong>inplace</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to update the variables in-place, or to create new
+variable handles. This is only relevant for frameworks with
+stateful variables such as PyTorch. Default is True, provided
+the backend framework supports it.</p></li>
+<li><p><strong>stop_gradients</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to stop the gradients of the variables after each
+gradient step. Default is True.</p></li>
+<li><p><strong>compile_on_next_step</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to compile the optimizer on the next step.
+Default is False.</p></li>
 </ul>
 </dd>
 </dl>
@@ -269,21 +283,27 @@ Default is True, provided the backend framework supports it.</p></li>
 <dl class="py method">
 <dt class="sig sig-object py" id="ivy.stateful.optimizers.Optimizer.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop_gradients</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init_on_first_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compile_on_next_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_to_non_compiled</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ivy/stateful/optimizers.html#Optimizer.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ivy.stateful.optimizers.Optimizer.__init__" title="Permalink to this definition"></a></dt>
-<dd><p>Construct an general Optimizer. This is an abstract class, and must
-be derived.</p>
+<dd><p>Construct an general Optimizer. This is an abstract class, and must be
+derived.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>lr</strong> (<em>function</em><em> or </em><em>float.</em>) – Learning rate.</p></li>
-<li><p><strong>inplace</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to update the variables in-place, or to create new variable handles.
-This is only relevant for frameworks with stateful variables such as PyTorch.
-Default is True, provided the backend framework supports it.</p></li>
-<li><p><strong>stop_gradients</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to stop the gradients of the variables after each gradient step. Default is True.</p></li>
-<li><p><strong>init_on_first_step</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether the optimizer is initialized on the first step. Default is False.</p></li>
-<li><p><strong>compile_on_next_step</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to compile the optimizer on the next step. Default is False.</p></li>
-<li><p><strong>fallback_to_non_compiled</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to fall back to non-compiled forward call in the case that an error is
-raised during the compiled forward pass. Default is True.</p></li>
-<li><p><strong>device</strong> (<em>ivy.Device</em><em>, </em><em>optional</em>) – device on which to create the layer’s variables ‘cuda:0’, ‘cuda:1’, ‘cpu’ etc.</p></li>
+<li><p><strong>inplace</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to update the variables in-place, or to create new
+variable handles. This is only relevant for frameworks with
+stateful variables such as PyTorch. Default is True, provided
+the backend framework supports it.</p></li>
+<li><p><strong>stop_gradients</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to stop the gradients of the variables after each
+gradient step. Default is True.</p></li>
+<li><p><strong>init_on_first_step</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether the optimizer is initialized on the first
+step. Default is False.</p></li>
+<li><p><strong>compile_on_next_step</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to compile the optimizer on the next step.
+Default is False.</p></li>
+<li><p><strong>fallback_to_non_compiled</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to fall back to non-compiled forward
+call in the case that an error is raised during
+the compiled forward pass. Default is True.</p></li>
+<li><p><strong>device</strong> (<em>ivy.Device</em><em>, </em><em>optional</em>) – device on which to create the layer’s variables ‘cuda:0’,
+‘cuda:1’, ‘cpu’ etc.</p></li>
 </ul>
 </dd>
 </dl>
@@ -303,15 +323,14 @@ raised during the compiled forward pass. Default is True.</p></li>
 <dl class="py method">
 <dt class="sig sig-object py" id="ivy.stateful.optimizers.Optimizer.step">
 <span class="sig-name descname"><span class="pre">step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grads</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_missing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ivy/stateful/optimizers.html#Optimizer.step"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ivy.stateful.optimizers.Optimizer.step" title="Permalink to this definition"></a></dt>
-<dd><p>Update nested variables container v from overriden private
-self._step.</p>
+<dd><p>Update nested variables container v from overriden private self._step.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>v</strong> (<em>Ivy container of variables</em>) – Nested variables to update.</p></li>
 <li><p><strong>grads</strong> (<em>sequence of arrays</em>) – Nested gradients to update.</p></li>
-<li><p><strong>ignore_missing</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to ignore keys missing from the gradients which exist in the variables.
-Default is False.</p></li>
+<li><p><strong>ignore_missing</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to ignore keys missing from the gradients which
+exist in the variables. Default is False.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -334,11 +353,14 @@ Default is False.</p></li>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>lr</strong> (<em>float</em><em>, </em><em>optional</em>) – Learning rate, default is 1e-4.</p></li>
-<li><p><strong>inplace</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to update the variables in-place, or to create new variable handles.
-This is only relevant for frameworks with stateful variables such as PyTorch.
-Default is True, provided the backend framework supports it.</p></li>
-<li><p><strong>stop_gradients</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to stop the gradients of the variables after each gradient step. Default is True.</p></li>
-<li><p><strong>compile_on_next_step</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to compile the optimizer on the next step. Default is False.</p></li>
+<li><p><strong>inplace</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to update the variables in-place, or to create new
+variable handles. This is only relevant for frameworks with
+stateful variables such as PyTorch. Default is True, provided
+the backend framework supports it.</p></li>
+<li><p><strong>stop_gradients</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to stop the gradients of the variables after each
+gradient step. Default is True.</p></li>
+<li><p><strong>compile_on_next_step</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to compile the optimizer on the next step.
+Default is False.</p></li>
 </ul>
 </dd>
 </dl>
