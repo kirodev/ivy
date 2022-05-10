@@ -151,7 +151,7 @@
 <li><p><em>&gt;&gt;&gt; d = 1</em></p></li>
 <li><p><em>&gt;&gt;&gt; image = ivy.reshape(ivy.arange(h * w * d, dtype=ivy.float32),shape=(batch_size, h, w, d))</em></p></li>
 <li><p><em>&gt;&gt;&gt; dy, dx = ivy.gradient_image(image)</em></p></li>
-<li><p><strong>&gt;&gt;&gt; print(ivy.array(image[0,</strong> (<em>,:,0]))</em>)</p></li>
+<li><p><strong>&gt;&gt;&gt; print(image[0,</strong> (<em>,:,0])</em>)</p></li>
 <li><p><em>ivy.array([[0., 1., 2.],</em> – [3., 4., 5.],
 [6., 7., 8.]])</p></li>
 <li><p><strong>&gt;&gt;&gt; print(dy[0,</strong> (<em>,:,0])</em>) –</p>
