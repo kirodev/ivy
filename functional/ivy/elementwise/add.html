@@ -248,7 +248,7 @@ type determined by <span class="xref std std-ref">type-promotion</span>.</p>
 </dd>
 </dl>
 <p>This method conforms to the <a class="reference external" href="https://data-apis.org/array-api/latest/">Array API Standard</a>. This docstring is an extension of the
-<a class="reference external" href="https://data-apis.org/array-api/latest/API_specification/generated/signatures.elementwise_functions.add.html">docstring</a>
+<a class="reference external" href="https://data-apis.org/array-api/latest/API_specification/generated/signatures.elementwise_functions.add.html">docstring</a> # noqa
 in the standard. The descriptions above assume an array input for simplicity, but
 the method also accepts <code class="code docutils literal notranslate"><span class="pre">ivy.Container</span></code> instances in place of
 <code class="code docutils literal notranslate"><span class="pre">ivy.Array</span></code> or <code class="code docutils literal notranslate"><span class="pre">ivy.NativeArray</span></code> instances, as shown in the type hints
@@ -270,6 +270,15 @@ and also the examples below.</p>
 <span class="go">ivy.array([[5.9, 7.1, 1.2],</span>
 <span class="go">           [6.3, 7.5, 1.6],</span>
 <span class="go">           [7.2, 8.4, 2.5]])</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">array</span><span class="p">([[[</span><span class="mf">1.1</span><span class="p">],</span> <span class="p">[</span><span class="mf">3.2</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">6.3</span><span class="p">]]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">8.4</span><span class="p">],</span> <span class="p">[</span><span class="mf">2.5</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.6</span><span class="p">]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ivy</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="go">ivy.array([[[9.5],</span>
+<span class="go">            [5.7],</span>
+<span class="go">            [-4.7]]])</span>
 </pre></div>
 </div>
 <p>With <code class="code docutils literal notranslate"><span class="pre">ivy.Container</span></code> input:</p>
