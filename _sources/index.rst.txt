@@ -292,12 +292,14 @@ Citation
    extensions.rst
    roadmap.rst
    contributing.rst
+   faq.rst
+   building_the_docs.rst
 
 
 .. toctree::
    :hidden:
    :maxdepth: -1
-   :caption: Functional
+   :caption: Functions
 
    functional/backends.rst
    functional/ivy.rst
@@ -306,7 +308,7 @@ Citation
 .. toctree::
    :hidden:
    :maxdepth: -1
-   :caption: Stateful
+   :caption: Classes
 
    stateful/activations.rst
    stateful/converters.rst
