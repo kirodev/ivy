@@ -47,7 +47,29 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Functions</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy.html">Ivy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/activations.html">Activations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/compilation.html">Compilation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/constants.html">Constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/creation.html">Creation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/data_type.html">Data type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/device.html">Device</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/elementwise.html">Elementwise</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/general.html">General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/gradients.html">Gradients</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/image.html">Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/linear_algebra.html">Linear algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/losses.html">Losses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/manipulation.html">Manipulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/meta.html">Meta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/nest.html">Nest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/random.html">Random</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/searching.html">Searching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/set.html">Set</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/sorting.html">Sorting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/statistical.html">Statistical</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional/ivy/utility.html">Utility</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul>
@@ -160,23 +182,25 @@
 <span class="sd">    Functional Examples</span>
 <span class="sd">    -------</span>
 <span class="sd">    With :code:`ivy.Array` input:</span>
-<span class="sd">    &gt;&gt;&gt; ivy.set_framework(&quot;numpy&quot;)</span>
+
 <span class="sd">    &gt;&gt;&gt; x = ivy.array([1, 2, 3])</span>
 <span class="sd">    &gt;&gt;&gt; y = ivy.all(x)</span>
 <span class="sd">    &gt;&gt;&gt; print(y)</span>
 <span class="sd">    ivy.array(True)</span>
 
-<span class="sd">    &gt;&gt;&gt; x = ivy.array([1, 2, 3])</span>
-<span class="sd">    &gt;&gt;&gt; y = ivy.zeros(3)</span>
-<span class="sd">    &gt;&gt;&gt; ivy.all(x, out=y)</span>
-<span class="sd">    &gt;&gt;&gt; print(y)</span>
-<span class="sd">    ivy.array([0., 0., 0.])</span>
+<span class="sd">    &gt;&gt;&gt; x = np.array([1, 2, 3])</span>
+<span class="sd">    &gt;&gt;&gt; y = ivy.zeros(1,dtype=&#39;bool&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; a = np.all(x,out = y,keepdims=True)</span>
+<span class="sd">    &gt;&gt;&gt; print(a)</span>
+<span class="sd">    [ True]</span>
 
-<span class="sd">    &gt;&gt;&gt; x = ivy.array([[1, 2, 3],[4, 5, 6]])</span>
-<span class="sd">    &gt;&gt;&gt; ivy.all(x, out=x)</span>
-<span class="sd">    &gt;&gt;&gt; print(x)</span>
-<span class="sd">    ivy.array([[1, 2, 3],</span>
-<span class="sd">           [4, 5, 6]])</span>
+
+<span class="sd">    &gt;&gt;&gt; x = ivy.array([False])</span>
+<span class="sd">    &gt;&gt;&gt; y = ivy.all(x,out = x,keepdims=True)</span>
+<span class="sd">    &gt;&gt;&gt; print(y)</span>
+<span class="sd">    ivy.array([False])</span>
+
+
 
 
 <span class="sd">    With :code:`ivy.NativeArray` input:</span>
@@ -194,7 +218,7 @@
 <span class="sd">        a: ivy.array(False),</span>
 <span class="sd">        b: ivy.array(True)</span>
 <span class="sd">    }</span>
-<span class="sd">    </span>
+
 <span class="sd">    Instance Method Examples</span>
 <span class="sd">    ------------------------</span>
 
@@ -204,6 +228,7 @@
 <span class="sd">    &gt;&gt;&gt; y = x.all()</span>
 <span class="sd">    &gt;&gt;&gt; print(y)</span>
 <span class="sd">    ivy.array(True)</span>
+
 
 
 <span class="sd">    Using :code:`ivy.Container` instance method:</span>
