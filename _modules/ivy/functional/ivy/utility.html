@@ -194,11 +194,10 @@
 <span class="sd">    &gt;&gt;&gt; print(a)</span>
 <span class="sd">    [ True]</span>
 
-
-<span class="sd">    &gt;&gt;&gt; x = ivy.array([False])</span>
-<span class="sd">    &gt;&gt;&gt; y = ivy.all(x,out = x,keepdims=True)</span>
+<span class="sd">    &gt;&gt;&gt; x=np.array(False)</span>
+<span class="sd">    &gt;&gt;&gt; y=ivy.all([-1, 4, 5], out=x)</span>
 <span class="sd">    &gt;&gt;&gt; print(y)</span>
-<span class="sd">    ivy.array([False])</span>
+<span class="sd">    ivy.array(True)</span>
 
 
 
