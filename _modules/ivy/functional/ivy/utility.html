@@ -188,22 +188,20 @@
 <span class="sd">    &gt;&gt;&gt; print(y)</span>
 <span class="sd">    ivy.array(True)</span>
 
-<span class="sd">    &gt;&gt;&gt; x = np.array([1, 2, 3])</span>
+<span class="sd">    &gt;&gt;&gt; x = ivy.array([1, 2, 3])</span>
 <span class="sd">    &gt;&gt;&gt; y = ivy.zeros(1,dtype=&#39;bool&#39;)</span>
 <span class="sd">    &gt;&gt;&gt; a = ivy.all(x,out = y,keepdims=True)</span>
 <span class="sd">    &gt;&gt;&gt; print(a)</span>
 <span class="sd">    ivy.array([ True])</span>
 
 
-<span class="sd">    &gt;&gt;&gt; x=np.array(False)</span>
+<span class="sd">    &gt;&gt;&gt; x=ivy.array(False)</span>
 <span class="sd">    &gt;&gt;&gt; y=ivy.all([-1, 4, 5], out=x)</span>
 <span class="sd">    &gt;&gt;&gt; print(y)</span>
 <span class="sd">    ivy.array(True)</span>
 
-
-
-
 <span class="sd">    With :code:`ivy.NativeArray` input:</span>
+<span class="sd">    </span>
 <span class="sd">    &gt;&gt;&gt; x = ivy.native_array([1, 2, 3])</span>
 <span class="sd">    &gt;&gt;&gt; y = ivy.all(x)</span>
 <span class="sd">    &gt;&gt;&gt; print(y)</span>
@@ -228,8 +226,6 @@
 <span class="sd">    &gt;&gt;&gt; y = x.all()</span>
 <span class="sd">    &gt;&gt;&gt; print(y)</span>
 <span class="sd">    ivy.array(True)</span>
-
-
 
 <span class="sd">    Using :code:`ivy.Container` instance method:</span>
 
