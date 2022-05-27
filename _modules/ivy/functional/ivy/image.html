@@ -127,7 +127,7 @@
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">_np</span>
 <span class="kn">from</span> <span class="nn">operator</span> <span class="kn">import</span> <span class="n">mul</span> <span class="k">as</span> <span class="n">_mul</span>
 <span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">reduce</span> <span class="k">as</span> <span class="n">_reduce</span>
-<span class="kn">from</span> <span class="nn">ivy.framework_handler</span> <span class="kn">import</span> <span class="n">current_framework</span> <span class="k">as</span> <span class="n">_cur_framework</span>
+<span class="kn">from</span> <span class="nn">ivy.backend_handler</span> <span class="kn">import</span> <span class="n">current_backend</span> <span class="k">as</span> <span class="n">_cur_backend</span>
 <span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Tuple</span>
 
 
@@ -171,7 +171,7 @@
 <span class="sd">            [0., 0., 0.]]])</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">images</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">stack_images</span><span class="p">(</span><span class="n">images</span><span class="p">,</span> <span class="n">desired_aspect_ratio</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="n">_cur_backend</span><span class="p">(</span><span class="n">images</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">stack_images</span><span class="p">(</span><span class="n">images</span><span class="p">,</span> <span class="n">desired_aspect_ratio</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="bilinear_resample"><a class="viewcode-back" href="../../../../functional/ivy/image/bilinear_resample.html#ivy.functional.ivy.image.bilinear_resample">[docs]</a><span class="k">def</span> <span class="nf">bilinear_resample</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">warp</span><span class="p">):</span>
@@ -190,7 +190,7 @@
 <span class="sd">        Image after bilinear re-sampling.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">bilinear_resample</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">warp</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="n">_cur_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">bilinear_resample</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">warp</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="gradient_image"><a class="viewcode-back" href="../../../../functional/ivy/image/gradient_image.html#ivy.functional.ivy.image.gradient_image">[docs]</a><span class="k">def</span> <span class="nf">gradient_image</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -224,14 +224,14 @@
 <span class="sd">     ivy.array([[3., 3., 3.],</span>
 <span class="sd">               [3., 3., 3.],</span>
 <span class="sd">               [0., 0., 0.]])</span>
-<span class="sd">               </span>
+
 <span class="sd">    &gt;&gt;&gt; print(dx[0, :,:,0])</span>
 <span class="sd">     ivy.array([[1., 1., 0.],</span>
 <span class="sd">               [1., 1., 0.],</span>
 <span class="sd">               [1., 1., 0.]])</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">gradient_image</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="n">_cur_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">gradient_image</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="float_img_to_uint8_img"><a class="viewcode-back" href="../../../../functional/ivy/image/float_img_to_uint8_img.html#ivy.functional.ivy.image.float_img_to_uint8_img">[docs]</a><span class="k">def</span> <span class="nf">float_img_to_uint8_img</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -277,7 +277,7 @@
     <span class="k">return</span> <span class="n">ivy</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">_np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">x_float</span><span class="p">,</span> <span class="n">x_shape</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span></div>
 
 
-<div class="viewcode-block" id="random_crop"><a class="viewcode-back" href="../../../../functional/ivy/image/random_crop.html#ivy.functional.ivy.image.random_crop">[docs]</a><span class="k">def</span> <span class="nf">random_crop</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">crop_size</span><span class="p">,</span> <span class="n">batch_shape</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">image_dims</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="random_crop"><a class="viewcode-back" href="../../../../functional/ivy/image/random_crop.html#ivy.functional.ivy.image.random_crop">[docs]</a><span class="k">def</span> <span class="nf">random_crop</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">crop_size</span><span class="p">,</span> <span class="n">batch_shape</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">image_dims</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Randomly crops the input images.</span>
 
 <span class="sd">    Parameters</span>
@@ -304,6 +304,8 @@
         <span class="n">image_dims</span> <span class="o">=</span> <span class="n">x_shape</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
     <span class="n">num_channels</span> <span class="o">=</span> <span class="n">x_shape</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
     <span class="n">flat_batch_size</span> <span class="o">=</span> <span class="n">_reduce</span><span class="p">(</span><span class="n">_mul</span><span class="p">,</span> <span class="n">batch_shape</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">crop_size</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">crop_size</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="n">x_shape</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">])</span>
+    <span class="n">crop_size</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">crop_size</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">x_shape</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
 
     <span class="c1"># shapes as list</span>
     <span class="n">batch_shape</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">batch_shape</span><span class="p">)</span>
@@ -314,8 +316,9 @@
     <span class="n">x_flat</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">[</span><span class="n">flat_batch_size</span><span class="p">]</span> <span class="o">+</span> <span class="n">image_dims</span> <span class="o">+</span> <span class="p">[</span><span class="n">num_channels</span><span class="p">])</span>
 
     <span class="c1"># FBS x 1</span>
-    <span class="n">x_offsets</span> <span class="o">=</span> <span class="n">_np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">margins</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="n">flat_batch_size</span><span class="p">])</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
-    <span class="n">y_offsets</span> <span class="o">=</span> <span class="n">_np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">margins</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="n">flat_batch_size</span><span class="p">])</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+    <span class="n">rng</span> <span class="o">=</span> <span class="n">_np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
+    <span class="n">x_offsets</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">integers</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">margins</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">flat_batch_size</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+    <span class="n">y_offsets</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">integers</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">margins</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">flat_batch_size</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
 
     <span class="c1"># list of 1 x NH x NW x F</span>
     <span class="n">cropped_list</span> <span class="o">=</span> <span class="p">[</span>
@@ -350,7 +353,7 @@
 <span class="sd">        The array after the linear resampling.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">linear_resample</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">num_samples</span><span class="p">,</span> <span class="n">axis</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="n">_cur_backend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">linear_resample</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">num_samples</span><span class="p">,</span> <span class="n">axis</span><span class="p">)</span></div>
 </pre></div>
 
            </div>
