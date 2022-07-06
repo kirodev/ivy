@@ -2,6 +2,12 @@ argsort
 =======
 
 .. autofunction:: ivy.functional.ivy.sorting.argsort
+
+.. autofunction:: ivy.array.array_methods.argsort
+
+.. autofunction:: ivy.container.container_methods.argsort
+
+.. autofunction:: ivy.container.container_methods.static_argsort
 |
 | **Supported Frameworks:**
 

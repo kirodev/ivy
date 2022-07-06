@@ -2,6 +2,8 @@ tensordot
 =========
 
 .. autofunction:: ivy.functional.ivy.linear_algebra.tensordot
+
+.. autofunction:: ivy.array.array_methods.tensordot
 |
 | **Supported Frameworks:**
 

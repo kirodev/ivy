@@ -2,6 +2,14 @@ leaky_relu
 ==========
 
 .. autofunction:: ivy.functional.ivy.activations.leaky_relu
+
+.. autofunction:: ivy.array.array_methods.relu
+
+.. autofunction:: ivy.array.array_methods.leaky_relu
+
+.. autofunction:: ivy.container.container_methods.relu
+
+.. autofunction:: ivy.container.container_methods.leaky_relu
 |
 | **Supported Frameworks:**
 

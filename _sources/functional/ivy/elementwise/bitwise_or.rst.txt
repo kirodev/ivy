@@ -2,6 +2,10 @@ bitwise_or
 ==========
 
 .. autofunction:: ivy.functional.ivy.elementwise.bitwise_or
+
+.. autofunction:: ivy.array.array_methods.bitwise_or
+
+.. autofunction:: ivy.container.container_methods.bitwise_or
 |
 | **Supported Frameworks:**
 

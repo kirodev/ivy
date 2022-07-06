@@ -2,6 +2,10 @@ gelu
 ====
 
 .. autofunction:: ivy.functional.ivy.activations.gelu
+
+.. autofunction:: ivy.array.array_methods.gelu
+
+.. autofunction:: ivy.container.container_methods.gelu
 |
 | **Supported Frameworks:**
 

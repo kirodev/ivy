@@ -2,6 +2,8 @@ softplus
 ========
 
 .. autofunction:: ivy.functional.ivy.activations.softplus
+
+.. autofunction:: ivy.container.container_methods.softplus
 |
 | **Supported Frameworks:**
 

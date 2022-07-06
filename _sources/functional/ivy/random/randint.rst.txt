@@ -2,6 +2,8 @@ randint
 =======
 
 .. autofunction:: ivy.functional.ivy.random.randint
+
+.. autofunction:: ivy.container.container_methods.static_randint
 |
 | **Supported Frameworks:**
 

@@ -2,6 +2,10 @@ tanh
 ====
 
 .. autofunction:: ivy.functional.ivy.activations.tanh
+
+.. autofunction:: ivy.array.array_methods.tanh
+
+.. autofunction:: ivy.container.container_methods.tanh
 |
 | **Supported Frameworks:**
 
