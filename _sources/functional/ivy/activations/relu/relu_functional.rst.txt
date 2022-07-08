@@ -1,8 +1,6 @@
 ivy.relu
 ========
-.. autofunction:: ivy.functional.ivy.activations.leaky_relu
-
-.. autofunction:: ivy.container.container_methods.leaky_relu
+.. autofunction:: ivy.functional.ivy.activations.relu
 |
 | **Supported Frameworks:**
 

@@ -23,3 +23,13 @@ softplus
 
 .. |numpy_logo| image:: ../../../logos/supported/numpy_logo.png
    :target: https://numpy.org
+
+
+.. toctree::
+   :hidden:
+   :maxdepth: -1
+   :caption: softplus
+
+   softplus/softplus_functional.rst
+   softplus/softplus_container.rst
+
