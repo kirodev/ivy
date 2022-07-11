@@ -5,6 +5,8 @@ gelu
 
 .. autofunction:: ivy.array.array_methods.gelu
 
+.. autofunction:: ivy.container.container_methods.static_gelu
+
 .. autofunction:: ivy.container.container_methods.gelu
 |
 | **Supported Frameworks:**
@@ -35,4 +37,5 @@ gelu
    gelu/gelu_functional.rst
    gelu/gelu_array.rst
    gelu/gelu_container.rst
+   gelu/static_gelu_container.rst
 

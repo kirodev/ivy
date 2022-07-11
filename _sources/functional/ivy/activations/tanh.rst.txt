@@ -5,6 +5,8 @@ tanh
 
 .. autofunction:: ivy.array.array_methods.tanh
 
+.. autofunction:: ivy.container.container_methods.static_tanh
+
 .. autofunction:: ivy.container.container_methods.tanh
 |
 | **Supported Frameworks:**
@@ -33,6 +35,7 @@ tanh
    :caption: tanh
 
    tanh/tanh_functional.rst
+   tanh/static_tanh_container.rst
    tanh/tanh_array.rst
    tanh/tanh_container.rst
 

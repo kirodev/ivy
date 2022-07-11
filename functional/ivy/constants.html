@@ -1,5 +1,4 @@
-<!
-      <link rel="icon" type="image/png" href="../logos/ivy_logo_only.png">DOCTYPE html>
+<!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -7,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Constants &mdash; Ivy 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="icon" type="image/png" href="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/ivy_logo_only.png?raw=true">
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -77,10 +77,21 @@
 <li class="toctree-l1"><a class="reference internal" href="statistical.html">Statistical</a></li>
 <li class="toctree-l1"><a class="reference internal" href="utility.html">Utility</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<p class="caption" role="heading"><span class="caption-text">Data Classes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/data_classes.html">Data classes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/stateful.html">Framework classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_classes/container.html">Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_classes/array.html">Array</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../stateful/initializers.html">Initializers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../stateful/layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../stateful/sequential.html">Sequential</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../stateful/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../stateful/optimizers.html">Optimizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../stateful/activations.html">Activations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../stateful/converters.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../stateful/module.html">Module</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
@@ -119,8 +130,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="constants">
-<h1>Constants<a class="headerlink" href="#constants" title="Permalink to this heading"></a></h1>
+  <section id="module-ivy.functional.ivy.constants">
+<span id="constants"></span><h1>Constants<a class="headerlink" href="#module-ivy.functional.ivy.constants" title="Permalink to this heading"></a></h1>
+<dl class="py data">
+<dt class="sig sig-object py" id="ivy.functional.ivy.constants.e">
+<span class="sig-prename descclassname">ivy.</span></span><span class="sig-name descname"><span class="pre">e</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2.718281828459045</span></em><a class="headerlink" href="#ivy.functional.ivy.constants.e" title="Permalink to this definition"></a></dt>
+<dd><p>IEEE 754 floating-point representation of Euler’s constant.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="ivy.functional.ivy.constants.inf">
+<span class="sig-prename descclassname">ivy.</span></span><span class="sig-name descname"><span class="pre">inf</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">inf</span></em><a class="headerlink" href="#ivy.functional.ivy.constants.inf" title="Permalink to this definition"></a></dt>
+<dd><p>IEEE 754 floating-point representation of (positive) infinity.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="ivy.functional.ivy.constants.nan">
+<span class="sig-prename descclassname">ivy.</span></span><span class="sig-name descname"><span class="pre">nan</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">nan</span></em><a class="headerlink" href="#ivy.functional.ivy.constants.nan" title="Permalink to this definition"></a></dt>
+<dd><p>IEEE 754 floating-point representation of Not a Number (NaN).</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="ivy.functional.ivy.constants.newaxis">
+<span class="sig-prename descclassname">ivy.</span></span><span class="sig-name descname"><span class="pre">newaxis</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#ivy.functional.ivy.constants.newaxis" title="Permalink to this definition"></a></dt>
+<dd><p>An alias for None which is useful for indexing arrays.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="ivy.functional.ivy.constants.pi">
+<span class="sig-prename descclassname">ivy.</span></span><span class="sig-name descname"><span class="pre">pi</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">π</span></em><a class="headerlink" href="#ivy.functional.ivy.constants.pi" title="Permalink to this definition"></a></dt>
+<dd><p>IEEE 754 floating-point representation of the mathematical constant e.</p>
+</dd></dl>
+
 <div class="toctree-wrapper compound">
 </div>
 </section>

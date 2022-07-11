@@ -5,6 +5,8 @@ sigmoid
 
 .. autofunction:: ivy.array.array_methods.sigmoid
 
+.. autofunction:: ivy.container.container_methods.static_sigmoid
+
 .. autofunction:: ivy.container.container_methods.sigmoid
 |
 | **Supported Frameworks:**
@@ -35,4 +37,5 @@ sigmoid
    sigmoid/sigmoid_functional.rst
    sigmoid/sigmoid_array.rst
    sigmoid/sigmoid_container.rst
+   sigmoid/static_sigmoid_container.rst
 

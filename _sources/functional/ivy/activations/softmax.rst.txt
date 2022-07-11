@@ -6,6 +6,8 @@ softmax
 .. autofunction:: ivy.array.array_methods.softmax
 
 .. autofunction:: ivy.container.container_methods.softmax
+
+.. autofunction:: ivy.container.container_methods.static_softmax
 |
 | **Supported Frameworks:**
 
@@ -35,4 +37,5 @@ softmax
    softmax/softmax_functional.rst
    softmax/softmax_array.rst
    softmax/softmax_container.rst
+   softmax/static_softmax_container.rst
 
