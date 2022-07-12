@@ -61,6 +61,7 @@
 <li class="toctree-l2"><a class="reference internal" href="softmax.html">softmax</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">softplus</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="softplus/softplus_functional.html">ivy.softplus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="softplus/softplus_array.html">ivy.Array.softplus</a></li>
 <li class="toctree-l3"><a class="reference internal" href="softplus/softplus_container.html">ivy.Container.softplus</a></li>
 <li class="toctree-l3"><a class="reference internal" href="softplus/static_softplus_container.html">ivy.Container.static_softplus</a></li>
 </ul>
@@ -187,6 +188,27 @@ inputs broadcast to.</p></li>
 <span class="go">ivy.array([0.535,0.42])</span>
 </pre></div>
 </div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ivy.array.array_methods.softplus">
+<span class="sig-prename descclassname">ivy.Array.</span></span><span class="sig-name descname"><span class="pre">softplus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/ivy/array/activations.html#ArrayWithActivations.softplus"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ivy.array.array_methods.softplus" title="Permalink to this definition"></a></dt>
+<dd><p>ivy.Array instance method variant of ivy.abs. This method simply wraps the
+function, and so the docstring for ivy.abs also applies to this method
+with minimal changes.
+.. rubric:: Examples</p>
+<p>Using <code class="code docutils literal notranslate"><span class="pre">ivy.Array</span></code> instance method:
+&gt;&gt;&gt; import ivy
+&gt;&gt;&gt; ivy.set_backend(“numpy”)
+&gt;&gt;&gt; x = ivy.array([-0.3461, -0.6491])
+&gt;&gt;&gt; y = ivy.softplus(x)
+&gt;&gt;&gt; print(y)
+ivy.array([0.535, 0.42 ])</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Array</span></code></p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">

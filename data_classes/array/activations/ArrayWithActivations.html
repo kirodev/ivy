@@ -165,7 +165,18 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="ivy.array.activations.ArrayWithActivations.gelu">
 <span class="sig-name descname"><span class="pre">gelu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">approximate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/ivy/array/activations.html#ArrayWithActivations.gelu"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ivy.array.activations.ArrayWithActivations.gelu" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
+<dd><p>ivy.Array instance method variant of ivy.abs. This method simply wraps the
+function, and so the docstring for ivy.abs also applies to this method
+with minimal changes.
+.. rubric:: Examples</p>
+<p>Using <code class="code docutils literal notranslate"><span class="pre">ivy.Array</span></code> instance method:
+&gt;&gt;&gt; import ivy
+&gt;&gt;&gt; ivy.set_backend(“numpy”)
+&gt;&gt;&gt; x = ivy.array([0.3, -0.1])
+&gt;&gt;&gt; y = ivy.gelu(x)
+&gt;&gt;&gt; print(y)
+ivy.array([ 0.185, -0.046])</p>
+<dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="../../array.html#module-ivy.Array" title="ivy.Array"><code class="xref py py-class docutils literal notranslate"><span class="pre">Array</span></code></a></p>
 </dd>
@@ -175,7 +186,18 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="ivy.array.activations.ArrayWithActivations.leaky_relu">
 <span class="sig-name descname"><span class="pre">leaky_relu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/ivy/array/activations.html#ArrayWithActivations.leaky_relu"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ivy.array.activations.ArrayWithActivations.leaky_relu" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
+<dd><p>ivy.Array instance method variant of ivy.abs. This method simply wraps the
+function, and so the docstring for ivy.abs also applies to this method
+with minimal changes.
+.. rubric:: Examples</p>
+<p>Using <code class="code docutils literal notranslate"><span class="pre">ivy.Array</span></code> instance method:
+&gt;&gt;&gt; import ivy
+&gt;&gt;&gt; ivy.set_backend(“numpy”)
+&gt;&gt;&gt; x = ivy.array([0.39, -0.85])
+&gt;&gt;&gt; y = ivy.leaky_relu(x)
+&gt;&gt;&gt; print(y)
+ivy.array([ 0.39, -0.17])</p>
+<dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="../../array.html#module-ivy.Array" title="ivy.Array"><code class="xref py py-class docutils literal notranslate"><span class="pre">Array</span></code></a></p>
 </dd>
@@ -185,7 +207,18 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="ivy.array.activations.ArrayWithActivations.relu">
 <span class="sig-name descname"><span class="pre">relu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/ivy/array/activations.html#ArrayWithActivations.relu"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ivy.array.activations.ArrayWithActivations.relu" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
+<dd><p>ivy.Array instance method variant of ivy.abs. This method simply wraps the
+function, and so the docstring for ivy.abs also applies to this method
+with minimal changes.
+.. rubric:: Examples</p>
+<p>Using <code class="code docutils literal notranslate"><span class="pre">ivy.Array</span></code> instance method:
+&gt;&gt;&gt; import ivy
+&gt;&gt;&gt; ivy.set_backend(“numpy”)
+&gt;&gt;&gt; x = ivy.array([-1., 0., 1.])
+&gt;&gt;&gt; y = ivy.relu(x)
+&gt;&gt;&gt; print(y)
+ivy.array([0., 0., 1.])</p>
+<dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="../../array.html#module-ivy.Array" title="ivy.Array"><code class="xref py py-class docutils literal notranslate"><span class="pre">Array</span></code></a></p>
 </dd>
@@ -195,7 +228,18 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="ivy.array.activations.ArrayWithActivations.sigmoid">
 <span class="sig-name descname"><span class="pre">sigmoid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/ivy/array/activations.html#ArrayWithActivations.sigmoid"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ivy.array.activations.ArrayWithActivations.sigmoid" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
+<dd><p>ivy.Array instance method variant of ivy.abs. This method simply wraps the
+function, and so the docstring for ivy.abs also applies to this method
+with minimal changes.
+.. rubric:: Examples</p>
+<p>Using <code class="code docutils literal notranslate"><span class="pre">ivy.Array</span></code> instance method:
+&gt;&gt;&gt; import ivy
+&gt;&gt;&gt; ivy.set_backend(“numpy”)
+&gt;&gt;&gt; x = ivy.array([-1., 1., 2.])
+&gt;&gt;&gt; y = ivy.sigmoid(x)
+&gt;&gt;&gt; print(y)
+ivy.array([0.269, 0.731, 0.881])</p>
+<dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="../../array.html#module-ivy.Array" title="ivy.Array"><code class="xref py py-class docutils literal notranslate"><span class="pre">Array</span></code></a></p>
 </dd>
@@ -205,7 +249,39 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="ivy.array.activations.ArrayWithActivations.softmax">
 <span class="sig-name descname"><span class="pre">softmax</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/ivy/array/activations.html#ArrayWithActivations.softmax"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ivy.array.activations.ArrayWithActivations.softmax" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
+<dd><p>ivy.Array instance method variant of ivy.abs. This method simply wraps the
+function, and so the docstring for ivy.abs also applies to this method
+with minimal changes.
+.. rubric:: Examples</p>
+<p>Using <code class="code docutils literal notranslate"><span class="pre">ivy.Array</span></code> instance method:
+&gt;&gt;&gt; import ivy
+&gt;&gt;&gt; ivy.set_backend(“numpy”)
+&gt;&gt;&gt; x = ivy.array([1.0, 0, 1.0])
+&gt;&gt;&gt; y = x.softmax()
+&gt;&gt;&gt; print(y)
+ivy.array([0.422, 0.155, 0.422])</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="../../array.html#module-ivy.Array" title="ivy.Array"><code class="xref py py-class docutils literal notranslate"><span class="pre">Array</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ivy.array.activations.ArrayWithActivations.softplus">
+<span class="sig-name descname"><span class="pre">softplus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/ivy/array/activations.html#ArrayWithActivations.softplus"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ivy.array.activations.ArrayWithActivations.softplus" title="Permalink to this definition"></a></dt>
+<dd><p>ivy.Array instance method variant of ivy.abs. This method simply wraps the
+function, and so the docstring for ivy.abs also applies to this method
+with minimal changes.
+.. rubric:: Examples</p>
+<p>Using <code class="code docutils literal notranslate"><span class="pre">ivy.Array</span></code> instance method:
+&gt;&gt;&gt; import ivy
+&gt;&gt;&gt; ivy.set_backend(“numpy”)
+&gt;&gt;&gt; x = ivy.array([-0.3461, -0.6491])
+&gt;&gt;&gt; y = ivy.softplus(x)
+&gt;&gt;&gt; print(y)
+ivy.array([0.535, 0.42 ])</p>
+<dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="../../array.html#module-ivy.Array" title="ivy.Array"><code class="xref py py-class docutils literal notranslate"><span class="pre">Array</span></code></a></p>
 </dd>
@@ -215,7 +291,18 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="ivy.array.activations.ArrayWithActivations.tanh">
 <span class="sig-name descname"><span class="pre">tanh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/ivy/array/activations.html#ArrayWithActivations.tanh"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ivy.array.activations.ArrayWithActivations.tanh" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
+<dd><p>ivy.Array instance method variant of ivy.abs. This method simply wraps the
+function, and so the docstring for ivy.abs also applies to this method
+with minimal changes.
+.. rubric:: Examples</p>
+<p>Using <code class="code docutils literal notranslate"><span class="pre">ivy.Array</span></code> instance method:
+&gt;&gt;&gt; import ivy
+&gt;&gt;&gt; ivy.set_backend(“numpy”)
+&gt;&gt;&gt; x = ivy.array([0.55 , -0.55])
+&gt;&gt;&gt; y = ivy.tanh(x)
+&gt;&gt;&gt; print(y)
+ivy.array([ 0.501, -0.501])</p>
+<dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="../../array.html#module-ivy.Array" title="ivy.Array"><code class="xref py py-class docutils literal notranslate"><span class="pre">Array</span></code></a></p>
 </dd>
