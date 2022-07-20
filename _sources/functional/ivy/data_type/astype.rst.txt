@@ -27,3 +27,15 @@ astype
 
 .. |numpy_logo| image:: ../../../logos/supported/numpy_logo.png
    :target: https://numpy.org
+
+
+.. toctree::
+   :hidden:
+   :maxdepth: -1
+   :caption: astype
+
+   astype/astype_functional.rst
+   astype/astype_array.rst
+   astype/astype_container.rst
+   astype/static_astype_container.rst
+
