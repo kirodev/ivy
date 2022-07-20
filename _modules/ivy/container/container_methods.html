@@ -2871,7 +2871,17 @@
 <span class="sd">        a container containing the inverse hyperbolic tangent of each</span>
 <span class="sd">        element in ``x``. The returned container must have a floating-point data</span>
 <span class="sd">        type determined by :ref:`type-promotion`.</span>
-
+<span class="sd">        </span>
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; x = ivy.Container(a=ivy.array([0.,0.5, -1, 1]), b=ivy.array([1., 0., 6, -6]))</span>
+<span class="sd">    &gt;&gt;&gt; y = ivy.Container.static_atanh(x)</span>
+<span class="sd">    &gt;&gt;&gt; print(y)</span>
+<span class="sd">    {</span>
+<span class="sd">        a: ivy.array([0., 0.549, -inf, inf]),</span>
+<span class="sd">        b: ivy.array([inf, 0., nan, nan])</span>
+<span class="sd">    }</span>
+<span class="sd">    </span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">pass</span></div>
 
@@ -2915,6 +2925,16 @@
 <span class="sd">        a container containing the inverse hyperbolic tangent of each element</span>
 <span class="sd">        in ``self``. The returned container must have a floating-point</span>
 <span class="sd">        data type determined by :ref:`type-promotion`.</span>
+<span class="sd">        </span>
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; x = ivy.Container(a=ivy.array([0.,0.5, -1, 1]), b=ivy.array([1., 0., 6, -6]))</span>
+<span class="sd">    &gt;&gt;&gt; y = x.atanh()</span>
+<span class="sd">    &gt;&gt;&gt; print(y)</span>
+<span class="sd">    {</span>
+<span class="sd">         a: ivy.array([0., 0.549, -inf, inf]),</span>
+<span class="sd">         b: ivy.array([inf, 0., nan, nan])</span>
+<span class="sd">    }</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">pass</span></div>
