@@ -2099,7 +2099,17 @@
 <span class="sd">        a container containing the inverse hyperbolic cosine of each element</span>
 <span class="sd">        in ``x``. The returned container must have a floating-point data</span>
 <span class="sd">        type determined by :ref:`type-promotion`.</span>
-
+<span class="sd">        </span>
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; x = ivy.Container(a=ivy.array([0., 2., -1, 1]), b=ivy.array([1., 0., 10.0, -6]))</span>
+<span class="sd">    &gt;&gt;&gt; y = ivy.Container.static_acosh(x)</span>
+<span class="sd">    &gt;&gt;&gt; print(y)</span>
+<span class="sd">    {</span>
+<span class="sd">        a: ivy.array([nan, 1.32, nan, 0.]),</span>
+<span class="sd">        b: ivy.array([0., nan, 2.99, nan])</span>
+<span class="sd">    }</span>
+<span class="sd">    </span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">pass</span></div>
 
@@ -2143,6 +2153,17 @@
 <span class="sd">        a container containing the inverse hyperbolic cosine of each element in</span>
 <span class="sd">        ``self``. The returned container must have a floating-point data</span>
 <span class="sd">        type determined by :ref:`type-promotion`.</span>
+<span class="sd">        </span>
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; x = ivy.Container(a=ivy.array([0., 2., -1, 1]), b=ivy.array([1., 0., 10.0, -6]))</span>
+<span class="sd">    &gt;&gt;&gt; y = x.acosh()</span>
+<span class="sd">    &gt;&gt;&gt; print(y)</span>
+<span class="sd">    {</span>
+<span class="sd">        a: ivy.array([nan, 1.32, nan, 0.]),</span>
+<span class="sd">        b: ivy.array([0., nan, 2.99, nan])</span>
+<span class="sd">    }</span>
+<span class="sd">    </span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">pass</span></div>
 
