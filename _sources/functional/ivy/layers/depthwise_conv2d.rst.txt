@@ -27,15 +27,3 @@ depthwise_conv2d
 
 .. |numpy_logo| image:: ../../../logos/supported/numpy_logo.png
    :target: https://numpy.org
-
-
-.. toctree::
-   :hidden:
-   :maxdepth: -1
-   :caption: depthwise_conv2d
-
-   depthwise_conv2d/depthwise_conv2d_functional.rst
-   depthwise_conv2d/depthwise_conv2d_array.rst
-   depthwise_conv2d/depthwise_conv2d_container.rst
-   depthwise_conv2d/static_depthwise_conv2d_container.rst
-

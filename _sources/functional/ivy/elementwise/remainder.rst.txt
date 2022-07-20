@@ -27,15 +27,3 @@ remainder
 
 .. |numpy_logo| image:: ../../../logos/supported/numpy_logo.png
    :target: https://numpy.org
-
-
-.. toctree::
-   :hidden:
-   :maxdepth: -1
-   :caption: remainder
-
-   remainder/remainder_functional.rst
-   remainder/remainder_array.rst
-   remainder/remainder_container.rst
-   remainder/static_remainder_container.rst
-
