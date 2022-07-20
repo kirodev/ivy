@@ -2185,6 +2185,16 @@
 <span class="sd">        a container containing the inverse cosine of each element in ``x``.</span>
 <span class="sd">        The returned container must have a floating-point data type</span>
 <span class="sd">        determined by :ref:`type-promotion`.</span>
+<span class="sd">        </span>
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; x = ivy.Container(a=ivy.array([0., -1, 1]), b=ivy.array([1., 0., -6]))</span>
+<span class="sd">    &gt;&gt;&gt; y = ivy.Container.static_acos(x)</span>
+<span class="sd">    &gt;&gt;&gt; print(y)</span>
+<span class="sd">    {</span>
+<span class="sd">        a: ivy.array([1.57, 3.14, 0.]),</span>
+<span class="sd">        b: ivy.array([0., 1.57, nan])</span>
+<span class="sd">    }</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">pass</span></div>
@@ -2228,6 +2238,16 @@
 <span class="sd">        a container containing the inverse cosine of each element in ``self``.</span>
 <span class="sd">        The returned container must have a floating-point data type</span>
 <span class="sd">        determined by :ref:`type-promotion`.</span>
+<span class="sd">        </span>
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; x = ivy.Container(a=ivy.array([0., -1, 1]), b=ivy.array([1., 0., -6]))</span>
+<span class="sd">    &gt;&gt;&gt; y = x.acos()</span>
+<span class="sd">    &gt;&gt;&gt; print(y)</span>
+<span class="sd">    {</span>
+<span class="sd">        a: ivy.array([1.57, 3.14, 0.]),</span>
+<span class="sd">        b: ivy.array([0., 1.57, nan])</span>
+<span class="sd">    }</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">pass</span></div>
