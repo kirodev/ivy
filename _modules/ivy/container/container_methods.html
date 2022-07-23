@@ -5161,6 +5161,19 @@
 <span class="sd">    ret</span>
 <span class="sd">        a container containing the element-wise results. The returned container</span>
 <span class="sd">        must have a data type of ``bool``.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; x = ivy.Container(a=ivy.array([4, 5, 6]),\</span>
+<span class="sd">                          b=ivy.array([2, 3, 4]))</span>
+<span class="sd">    &gt;&gt;&gt; y = ivy.Container(a=ivy.array([1, 2, 3]),\</span>
+<span class="sd">                          b=ivy.array([5, 6, 7]))</span>
+<span class="sd">    &gt;&gt;&gt; z = ivy.Container.static_less(y,x)</span>
+<span class="sd">    &gt;&gt;&gt; print(z)</span>
+<span class="sd">    {</span>
+<span class="sd">        a: ivy.array([True, True, True]),</span>
+<span class="sd">        b: ivy.array([False, False, False])</span>
+<span class="sd">    }</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">pass</span></div>
 
@@ -5207,6 +5220,19 @@
 <span class="sd">    ret</span>
 <span class="sd">        a container containing the element-wise results. The returned container</span>
 <span class="sd">        must have a data type of ``bool``.</span>
+<span class="sd">            Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; x = ivy.Container(a=ivy.array([4, 5, 6]),\</span>
+<span class="sd">                          b=ivy.array([2, 3, 4]))</span>
+<span class="sd">    &gt;&gt;&gt; y = ivy.Container(a=ivy.array([1, 2, 3]),\</span>
+<span class="sd">                          b=ivy.array([5, 6, 7]))</span>
+<span class="sd">    &gt;&gt;&gt; z = x.less(y)</span>
+<span class="sd">    &gt;&gt;&gt; print(z)</span>
+<span class="sd">    {</span>
+<span class="sd">        a: ivy.array([False, False, False]),</span>
+<span class="sd">        b: ivy.array([True, True, True])</span>
+<span class="sd">    }</span>
+
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">pass</span></div>
 
