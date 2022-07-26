@@ -189,11 +189,11 @@
 <span class="sd">            </span>
 <span class="sd">        Examples</span>
 <span class="sd">        --------</span>
-<span class="sd">        &gt;&gt;&gt; x = ivy.array([2., 10.0, 1.0, -3.0])</span>
+<span class="sd">        &gt;&gt;&gt; x = ivy.array([2., 10.0, 1.0])</span>
 <span class="sd">        &gt;&gt;&gt; y = x.acosh()</span>
 <span class="sd">        &gt;&gt;&gt; print(y)</span>
-<span class="sd">        ivy.array([1.32, 2.99, 0.  ,  nan])   </span>
-
+<span class="sd">        ivy.array([1.32, 2.99, 0.  ])</span>
+<span class="sd">        </span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">ivy</span><span class="o">.</span><span class="n">acosh</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
@@ -219,10 +219,11 @@
 <span class="sd">            </span>
 <span class="sd">        Examples</span>
 <span class="sd">        --------</span>
-<span class="sd">        &gt;&gt;&gt; x = ivy.array([1.0, 2.0, -3.0])</span>
+<span class="sd">        &gt;&gt;&gt; x = ivy.array([1.0, 0.0, -0.9])</span>
 <span class="sd">        &gt;&gt;&gt; y = x.acos()</span>
 <span class="sd">        &gt;&gt;&gt; print(y)</span>
-<span class="sd">        ivy.array([ 0., nan, nan])</span>
+<span class="sd">        ivy.array([0.  , 1.57, 2.69])</span>
+<span class="sd">        </span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">ivy</span><span class="o">.</span><span class="n">acos</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
@@ -412,10 +413,10 @@
 <span class="sd">            </span>
 <span class="sd">        Examples</span>
 <span class="sd">        --------</span>
-<span class="sd">        &gt;&gt;&gt; x = ivy.array([0.0, 0.5, 1.0, -3.0])</span>
+<span class="sd">        &gt;&gt;&gt; x = ivy.array([0.0, 0.5, -0.9])</span>
 <span class="sd">        &gt;&gt;&gt; y = x.atanh()</span>
 <span class="sd">        &gt;&gt;&gt; print(y)</span>
-<span class="sd">        ivy.array([0.   , 0.549,   inf,   nan])</span>
+<span class="sd">        ivy.array([ 0.   ,  0.549, -1.47 ])</span>
 <span class="sd">        </span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">ivy</span><span class="o">.</span><span class="n">atanh</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
